@@ -82,5 +82,8 @@ eval "$(rbenv init -)"
 # /sbin scripts
 PATH="/sbin:${PATH}"
 
+# /usr/sbin scripts
+PATH="/usr/sbin:${PATH}"
+
 # local scripts
 PATH="${HOME}/bin:${PATH}"
