@@ -70,9 +70,6 @@ if [ -f ~/sources/clones/bash-git-prompt/gitprompt.sh ]; then
     source ~/sources/clones/bash-git-prompt/gitprompt.sh
 fi
 
-# mint-fortune
-/usr/bin/mint-fortune
-
 # NPM modules binaries
 PATH="${HOME}/node_modules/.bin:${PATH}"
 # rbenv
