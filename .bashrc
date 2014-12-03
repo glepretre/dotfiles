@@ -80,3 +80,6 @@ PATH="${HOME}/bin:${PATH}"
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
+
+PERL_MB_OPT="--install_base \"/home/gilles/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/home/gilles/perl5"; export PERL_MM_OPT;
