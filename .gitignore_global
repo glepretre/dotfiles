@@ -1,0 +1,5 @@
+*~
+*.log
+*.todo
+node_modules
+bower_components
