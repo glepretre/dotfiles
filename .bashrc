@@ -2,10 +2,20 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+source_if_exists() {
+  # $1 must be the filepath
+  if [ -f $1 ]; then
+    source $1
+    # shift arguments to the left
+    # so $@ contains all but initial $1
+    shift
+    # run all additional commands passed as arguments
+    $@
+  fi
+}
+
 # Source global definitions
-if [ -f /etc/bash.bashrc ]; then
-        . /etc/bash.bashrc
-fi
+source_if_exists /etc/bash.bashrc
 
 # If not running interactively, don't do anything
 case $- in
@@ -35,7 +45,6 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-
 # If this is an xterm set the title to current directory
 # And a nice customized prompt string
 case "$TERM" in
@@ -55,10 +64,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # When running cd (current directory command) onto a git directory
 # show git status in bash
 # From: https://github.com/magicmonty/bash-git-prompt.git
-if [ -f ~/sources/clones/bash-git-prompt/gitprompt.sh ]; then
-    GIT_PROMPT_ONLY_IN_REPO=1
-    source ~/sources/clones/bash-git-prompt/gitprompt.sh
-fi
+source_if_exists ~/sources/clones/bash-git-prompt/gitprompt.sh export GIT_PROMPT_ONLY_IN_REPO=1
 
 # NPM modules binaries
 PATH="${HOME}/node_modules/.bin:${PATH}"
@@ -77,9 +83,7 @@ PATH="${HOME}/bin:${PATH}"
 
 # Alias definitions.
 # Must be loaded after path changes
-if [ -f ~/.bash_aliases ]; then
-. ~/.bash_aliases
-fi
+source_if_exists ~/.bash_aliases
 
 PERL_MB_OPT="--install_base \"/home/gilles/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/gilles/perl5"; export PERL_MM_OPT;
