@@ -21,7 +21,9 @@
 	pr = push-review
 	rph = rev-parse HEAD
 	rpm = rev-parse master
+	sa = !git stash apply && git diff --full-index --binary > .latest-stash
 	st = status
+	su = !git apply -R .latest-stash && rm .latest-stash
 	up = !git fetch && LAST=$(git log --all -n 1 --pretty=format:%H) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
 [push]
 	default = simple

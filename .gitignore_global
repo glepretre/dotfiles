@@ -1,5 +1,6 @@
 *~
 *.log
 *.todo
+*.latest-stash
 node_modules
 bower_components
