@@ -3,14 +3,11 @@
 # for examples
 
 source_if_exists() {
-  # $1 must be the filepath
   if [ -f $1 ]; then
     source $1
-    # shift arguments to the left
-    # so $@ contains all but initial $1
-    shift
-    # run all additional commands passed as arguments
-    $@
+    return 0
+  else
+    return 1
   fi
 }
 
@@ -64,7 +61,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # When running cd (current directory command) onto a git directory
 # show git status in bash
 # From: https://github.com/magicmonty/bash-git-prompt.git
-source_if_exists ~/sources/clones/bash-git-prompt/gitprompt.sh export GIT_PROMPT_ONLY_IN_REPO=1
+source_if_exists ~/sources/clones/bash-git-prompt/gitprompt.sh && GIT_PROMPT_ONLY_IN_REPO=1
 
 # NPM modules binaries
 PATH="${HOME}/node_modules/.bin:${PATH}"
