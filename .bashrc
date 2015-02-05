@@ -3,7 +3,7 @@
 # for examples
 
 source_if_exists() {
-  [ -f $1 ] && source "$1"
+  [ -f "$1" ] && source "$1"
 }
 
 # Source global definitions
