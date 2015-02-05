@@ -1,0 +1,115 @@
+{
+    "brackets-indent-guides.enabled": true,
+    "brackets-indent-guides.guideColor": "#525252",
+    "brackets-snippets.snippetsDirectory": "data",
+    "brackets-snippets.triggerSnippetShortcut": "Ctrl-Alt-Space",
+    "brackets-snippets.showSnippetsPanelShortcut": null,
+    "brackets-ruler.guideEnabled": true,
+    "brackets-ruler.rulerEnabled": true,
+    "brackets-ruler.guidePosition": 80,
+    "closeBrackets": true,
+    "closeTags": {
+        "whenOpening": true,
+        "whenClosing": true
+    },
+    "com.github.dsbonev.WhitespaceNormalizer.enabled": "true",
+    "com.github.dsbonev.WhitespaceNormalizer.trim": "true",
+    "com.github.dsbonev.WhitespaceNormalizer.transf": "true",
+    "com.github.dsbonev.WhitespaceNormalizer.eofnl": "true",
+    "denniskehrig.ShowWhitespace.checked": false,
+    "fileFilters": [
+        {
+            "name": "dist/bower/npm",
+            "patterns": [
+                "dist",
+                "bower_components",
+                "node_modules"
+            ]
+        },
+        {
+            "name": "vendor",
+            "patterns": [
+                "vendor"
+            ]
+        }
+    ],
+    "funcdocr.autoindent_enter": true,
+    "funcdocr.autoindent_tab": true,
+    "highlightMatches": true,
+    "insertHintOnTab": true,
+    "language": {
+        "javascript": {
+            "linting.prefer": [
+                "JSHint",
+                "JSCS"
+            ],
+            "linting.usePreferredOnly": true
+        }
+    },
+    "language.fileExtensions": {
+        "": "bash"
+    },
+    "linting.enabled": true,
+    "linting.collapsed": false,
+    "markdown-preview.useGFM": true,
+    "markdown-preview.theme": "dark",
+    "mikaeljorhult.bracketsTodo.enabled": false,
+    "mikaeljorhult.bracketsTodo.userSettings": {
+        "regex": {
+            "prefix": "(?:\\/\\*|\\/\\/|#|\\*) *@?(",
+            "suffix": "):? *(.*?) ?(?=\\*/|\\n|$)"
+        },
+        "tags": [
+            "TODO",
+            "NOTE",
+            "FIX ?ME",
+            "MEMO"
+        ],
+        "case": true,
+        "search": {
+            "scope": "project",
+            "excludeFolders": [
+                "bower_components",
+                "node_modules",
+                "dist"
+            ],
+            "excludeFiles": []
+        },
+        "sort": {
+            "done": true
+        }
+    },
+    "mikaeljorhult.bracketsTodo.visibleFiles": [],
+    "mikaeljorhult.bracketsTodo.visibleTags": {
+        "todo": {
+            "tag": "todo",
+            "name": "TODO",
+            "count": 0,
+            "visible": true
+        },
+        "note": {
+            "tag": "note",
+            "name": "NOTE",
+            "count": 0,
+            "visible": true
+        },
+        "fixme": {
+            "tag": "fixme",
+            "name": "FIXME",
+            "count": 0,
+            "visible": true
+        }
+    },
+    "path": {
+        "**/*/Makefile": {
+            "useTabChar": true
+        }
+    },
+    "smartIndent": true,
+    "spaceUnits": 2,
+    "styleActiveLine": true,
+    "tabSize": 2,
+    "useTabChar": false,
+    "themes.theme": "rain.monokai-dark-soda",
+    "vimderbar.enabled": false
+}
