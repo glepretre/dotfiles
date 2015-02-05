@@ -1,29 +1,29 @@
 [user]
-	email = gilles.lepretre@lim.eu
-	name = Gilles Lepretre
-	redmineid = 29
+  email = gilles.lepretre@lim.eu
+  name = Gilles Lepretre
+  redmineid = 29
 [color]
-	ui = true
+  ui = true
 [core]
-	excludesfile = ~/.gitignore_global
+  excludesfile = ~/.gitignore_global
 [alias]
-	aa = add --all
-	ca = commit --amend
-	cb = checkout -b
-	cm = commit -m
-	co = checkout
-	dc = diff --cached
-	df = diff
-	dms = diff master --stat
-	ds = diff --stat
-	last = log --all -n 1 --pretty=format:%H
-	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-	pr = push-review
-	rph = rev-parse HEAD
-	rpm = rev-parse master
-	sa = !git stash apply && git diff --full-index --binary > .latest-stash
-	st = status
-	su = !git apply -R .latest-stash && rm .latest-stash
-	up = !git fetch && LAST=$(git log --all -n 1 --pretty=format:%H) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
+  aa = add --all
+  ca = commit --amend
+  cb = checkout -b
+  cm = commit -m
+  co = checkout
+  dc = diff --cached
+  df = diff
+  dms = diff master --stat
+  ds = diff --stat
+  last = log --all -n 1 --pretty=format:%H
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  pr = push-review
+  rph = rev-parse HEAD
+  rpm = rev-parse master
+  sa = !git stash apply && git diff --full-index --binary > .latest-stash
+  st = status
+  su = !git apply -R .latest-stash && rm .latest-stash
+  up = !git fetch && LAST=$(git log --all -n 1 --pretty=format:%H) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
 [push]
-	default = simple
+  default = simple
