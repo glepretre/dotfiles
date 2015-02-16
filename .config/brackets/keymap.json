@@ -24,7 +24,7 @@
         "Ctrl-Alt-R": "recentProjects.toggle",
         "Ctrl-Alt-Space": "snippets.execute",
         "Ctrl-Alt-T": "mikaeljorhult.bracketsTodo.enable",
-        "Ctrl-Alt-V": "fontface.show-vimderbar.view.vimderbar",
+        "Ctrl-Alt-V": "view.enableVimderbar",
         "Ctrl-Alt-W": "denniskehrig.ShowWhitespace.toggle",
         "Ctrl-Alt-X": "codefolding.expand",
         "Ctrl-B": "cmd.addNextMatch",
