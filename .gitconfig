@@ -28,7 +28,3 @@
   up = !git fetch && LAST=$(git log --all -n 1 --pretty=format:%H) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
 [push]
   default = simple
-[branch "master"]
-  mergeoptions = --no-ff
-[branch "integration"]
-  mergeoptions = --no-ff
