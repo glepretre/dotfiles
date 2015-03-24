@@ -39,6 +39,7 @@
         "Ctrl-J": "navigate.jumptoDefinition",
         "Ctrl-K": "navigate.toggleQuickDocs",
         "Ctrl-L": "edit.selectLine",
+        "Ctrl-M": "davidwaterston.goToMatchingBracket.findMatch",
         "Ctrl-N": "file.newDoc",
         "Ctrl-O": "navigate.quickOpen",
         "Ctrl-Q": "file.quit",
