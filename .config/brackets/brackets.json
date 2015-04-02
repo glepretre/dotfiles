@@ -7,15 +7,12 @@
     "brackets-ruler.guideEnabled": true,
     "brackets-ruler.rulerEnabled": true,
     "brackets-ruler.guidePosition": 80,
+    "brackets-wsSanitizer.enabled": true,
     "closeBrackets": true,
     "closeTags": {
         "whenOpening": true,
         "whenClosing": true
     },
-    "com.github.dsbonev.WhitespaceNormalizer.enabled": "true",
-    "com.github.dsbonev.WhitespaceNormalizer.trim": "true",
-    "com.github.dsbonev.WhitespaceNormalizer.transf": "true",
-    "com.github.dsbonev.WhitespaceNormalizer.eofnl": "true",
     "denniskehrig.ShowWhitespace.checked": false,
     "fileFilters": [
         {
@@ -102,6 +99,7 @@
     },
     "path": {
         "**/*/Makefile": {
+            "brackets-wsSanitizer.enabled": false,
             "useTabChar": true
         }
     },
