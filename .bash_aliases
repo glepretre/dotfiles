@@ -11,6 +11,9 @@ alias count="expr length"
 # Chrome Test (clean environment)
 alias ct="google-chrome-unstable --incognito --user-data-dir=/tmp"
 
+# Open explorer at the current working directory
+alias explore="xdg-open ./"
+
 # Enhanced file listing
 alias ls="ls --color=auto"
 alias ll="ls -lAh --color=auto"
