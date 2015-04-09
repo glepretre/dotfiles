@@ -1,0 +1,34 @@
+{
+  "name": "pcgilles",
+  "version": "0.0.0",
+  "description": "@glepretre global node modules",
+  "authors": [
+    "Gilles Lepretre <gilles.lepretre@lim.eu>"
+  ],
+  "license": "Proprietary",
+  "private": true,
+  "dependencies": {
+    "karma": "~0.12.31",
+    "karma-chrome-launcher": "~0.1.7",
+    "karma-cli": "~0.0.4",
+    "karma-firefox-launcher": "~0.1.4",
+    "karma-jasmine": "~0.3.5",
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-requirejs": "~0.2.2",
+    "karma-script-launcher": "~0.1.0",
+    "phantomjs": "~1.9.16",
+    "protractor": "~2.0.0",
+    "requirejs": "~2.1.17"
+  },
+  "devDependencies": {
+    "ajour": "latest",
+    "bower": "~1.4.1",
+    "elementor": "latest",
+    "fuck-you": "latest",
+    "ghcal": "latest",
+    "git-stats": "latest",
+    "git-stats-importer": "latest",
+    "hsc-cli": "latest",
+    "idea": "latest"
+  }
+}
