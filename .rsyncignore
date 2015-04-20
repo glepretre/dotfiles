@@ -1,4 +1,5 @@
 **/*/bower_components/
+**/*/cache/
 **/*/node_modules/
 **/*/vendor/assets/components/
 *~
@@ -10,14 +11,18 @@
 .config/google-chrome/
 .config/teamviewer9/
 .config/tox/
+.cpan/
+.gem/
 .gnupg/
 .icons/
 .local/
 .mozilla/
 .npm/
 .rbenv/
+.themes/
 .thumbnails/
 .toxic/
+perl5/
 Desktop/
 Documents/personal/
 Downloads/
