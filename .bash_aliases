@@ -14,6 +14,9 @@ alias ct="google-chrome-unstable --incognito --user-data-dir=/tmp"
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
 
+# Firefox Test (clean environment)
+alias ft="firefox-nightly -no-remote -profile "/tmp" -private-window"
+
 # Enhanced file listing
 alias ls="ls --color=auto"
 alias ll="ls -lAh --color=auto"
@@ -23,4 +26,3 @@ alias paths="echo $PATH | tr -s ':' '\n'"
 
 # Update & upgrade packages
 alias up="sudo apt-get update && sudo apt-get upgrade"
-
