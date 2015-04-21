@@ -1,11 +1,14 @@
 **/*/bower_components/
 **/*/cache/
 **/*/node_modules/
+**/*/tmp/
 **/*/vendor/assets/components/
 *~
 .Skype/
 .android/
+.bash_history
 .cache/
+.config/Brackets/cef_data/
 .config/chromium/
 .config/google-chrome-unstable/
 .config/google-chrome/
@@ -22,11 +25,11 @@
 .themes/
 .thumbnails/
 .toxic/
-perl5/
 Desktop/
 Documents/personal/
 Downloads/
 Pictures/
 Software/
 node_modules/
+perl5/
 tmp/
