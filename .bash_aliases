@@ -21,6 +21,10 @@ alias ft="firefox-nightly -no-remote -profile "/tmp" -private-window"
 alias ls="ls --color=auto"
 alias ll="ls -lAh --color=auto"
 
+# https://github.com/nvbn/thefuck
+# NOTE: Keep the single quotes.
+alias merde='eval $(thefuck $(fc -ln -1))'
+
 # Echo paths nicely
 alias paths="echo $PATH | tr -s ':' '\n'"
 
