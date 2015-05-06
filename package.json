@@ -29,6 +29,7 @@
     "git-stats": "latest",
     "git-stats-importer": "latest",
     "hsc-cli": "latest",
-    "idea": "latest"
+    "idea": "latest",
+    "tzloc": "latest"
   }
 }
