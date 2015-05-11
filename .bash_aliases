@@ -2,6 +2,9 @@
 alias ..="cd .."
 alias ...="cd ../.."
 
+# Command line calculator
+alias calc="qalc"
+
 # Clear terminal with 1 char
 alias c="clear"
 
