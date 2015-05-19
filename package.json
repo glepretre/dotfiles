@@ -30,6 +30,8 @@
     "git-stats-importer": "latest",
     "hsc-cli": "latest",
     "idea": "latest",
+    "pomo": "latest",
+    "pomodoro-timer": "latest",
     "tzloc": "latest"
   }
 }
