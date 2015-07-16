@@ -8,6 +8,7 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
+    "jscs": "~1.13.1",
     "karma": "~0.12.31",
     "karma-chrome-launcher": "~0.1.7",
     "karma-cli": "~0.0.4",
