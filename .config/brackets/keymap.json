@@ -22,7 +22,6 @@
         "Ctrl-Alt-O": "file.openFolder",
         "Ctrl-Alt-P": "file.liveFilePreview",
         "Ctrl-Alt-R": "recentProjects.toggle",
-        "Ctrl-Alt-Space": "snippets.execute",
         "Ctrl-Alt-T": "mikaeljorhult.bracketsTodo.enable",
         "Ctrl-Alt-V": "view.enableVimderbar",
         "Ctrl-Alt-W": "denniskehrig.ShowWhitespace.toggle",

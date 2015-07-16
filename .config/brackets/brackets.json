@@ -14,6 +14,99 @@
         "whenClosing": true
     },
     "denniskehrig.ShowWhitespace.checked": false,
+    "edc.brackets-snippets.hints": [
+        {
+            "trigger": "cl",
+            "scope": "javascript",
+            "description": "console.log",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "console.log(${1:obj});${2}",
+            "source": "system"
+        },
+        {
+            "trigger": "cd",
+            "scope": "javascript",
+            "description": "console.dir",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "console.dir(${1:obj});${2}",
+            "source": "system"
+        },
+        {
+            "trigger": "cll",
+            "scope": "javascript",
+            "description": "console.log",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "console.log('${1:obj}:', ${1:obj});${2}",
+            "source": "system"
+        },
+        {
+            "trigger": "qs",
+            "scope": "javascript",
+            "description": "document.querySelector",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "${1:document}.querySelector('${2:selector}');${3}",
+            "source": "system"
+        },
+        {
+            "trigger": "qsa",
+            "scope": "javascript",
+            "description": "document.querySelectorAll",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "${1:document}.querySelectorAll('${2:selector}');${3}",
+            "source": "system"
+        },
+        {
+            "trigger": "fe",
+            "scope": "javascript",
+            "description": "forEach",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "${1:myArray}.forEach(function (${2:elem}) {\n  ${3}\n});",
+            "source": "system"
+        },
+        {
+            "trigger": "fn",
+            "scope": "javascript",
+            "description": "function",
+            "tag": "VanillaJS",
+            "tagHide": true,
+            "text": "function ${1:methodName} (${2:arguments}) {\n  ${3}\n}",
+            "source": "system"
+        },
+        {
+            "scope": "javascript",
+            "description": "define",
+            "trigger": "define",
+            "text": "define([], function() {\n  'use strict';\n\n    ${1}\n});",
+            "mTime": 1436424745946
+        },
+        {
+            "trigger": "beforeEach",
+            "description": "beforeEach",
+            "scope": "javascript",
+            "text": "beforeEach(function() {\n   ${1} \n});",
+            "mTime": 1437035507200
+        },
+        {
+            "trigger": "it",
+            "description": "it",
+            "scope": "javascript",
+            "text": "it('should ${1}', function() {\n    ${2}\n});",
+            "mTime": 1437035627537
+        },
+        {
+            "trigger": "afterEach",
+            "description": "afterEach",
+            "scope": "javascript",
+            "text": "afterEach(function() {\n   ${1} \n});",
+            "mTime": 1437035921660
+        }
+    ],
     "fileFilters": [
         {
             "name": "dist/bower/npm",
