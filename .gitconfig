@@ -28,3 +28,5 @@
   up = !git fetch && LAST=$(git log --all -n 1 --pretty=format:%H) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
 [push]
   default = simple
+[init]
+  templatedir = /home/gilles/.git-templates
