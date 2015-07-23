@@ -8,6 +8,7 @@
     "brackets-ruler.rulerEnabled": true,
     "brackets-ruler.guidePosition": 80,
     "brackets-wsSanitizer.enabled": true,
+    "brackets-wsSanitizer.notification": false,
     "closeBrackets": true,
     "closeTags": {
         "whenOpening": true,
@@ -70,13 +71,14 @@
             "source": "system"
         },
         {
-            "trigger": "fn",
+            "trigger": "fun",
             "scope": "javascript",
             "description": "function",
             "tag": "VanillaJS",
             "tagHide": true,
-            "text": "function ${1:methodName} (${2:arguments}) {\n  ${3}\n}",
-            "source": "system"
+            "text": "function() {\n  ${1}\n};",
+            "source": "system",
+            "mTime": 1437572308164
         },
         {
             "scope": "javascript",
@@ -105,6 +107,20 @@
             "scope": "javascript",
             "text": "afterEach(function() {\n   ${1} \n});",
             "mTime": 1437035921660
+        },
+        {
+            "trigger": "describe",
+            "description": "describe",
+            "scope": "javascript",
+            "text": "describe('${1}', function() {\n  ${2}\n});",
+            "mTime": 1437118995792
+        },
+        {
+            "trigger": "expect",
+            "description": "expect",
+            "scope": "javascript",
+            "text": "expect(${1}).toEqual(${2});",
+            "mTime": 1437120863215
         }
     ],
     "fileFilters": [
@@ -140,7 +156,7 @@
         "": "bash"
     },
     "linting.enabled": true,
-    "linting.collapsed": false,
+    "linting.collapsed": true,
     "markdown-preview.useGFM": true,
     "markdown-preview.theme": "dark",
     "mikaeljorhult.bracketsTodo.enabled": false,
