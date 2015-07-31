@@ -78,6 +78,9 @@ PATH="${HOME}/bin:${PATH}"
 # Must be loaded after path changes
 source_if_exists ~/.bash_aliases
 
+# Tiny highlighter function
+source_if_exists ~/sources/clones/hhighlighter/h.sh
+
 PERL_MB_OPT="--install_base \"/home/gilles/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/gilles/perl5"; export PERL_MM_OPT;
 
