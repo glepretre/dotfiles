@@ -63,6 +63,7 @@ PATH="${HOME}/node_modules/.bin:${PATH}"
 # rbenv
 PATH="${HOME}/.rbenv/bin:${PATH}"
 eval "$(rbenv init -)"
+rbenv shell 1.9.3-p448
 
 # /sbin scripts
 PATH="/sbin:${PATH}"
