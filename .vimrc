@@ -6,22 +6,22 @@
 
  " let Vundle manage Vundle
  " required!
- Bundle 'gmarik/vundle'
+ Plugin 'gmarik/vundle'
 
- Bundle 'scrooloose/nerdtree'
- Bundle 'vim-scripts/bufexplorer.zip'
- Bundle 'git://git.wincent.com/command-t.git'
+ Plugin 'scrooloose/nerdtree'
+ Plugin 'vim-scripts/bufexplorer.zip'
+ Plugin 'git://git.wincent.com/command-t.git'
 
-"Bundle 'Lokaltog/vim-powerline'
- Bundle 'altercation/vim-colors-solarized'
+"Plugin 'Lokaltog/vim-powerline'
+ Plugin 'altercation/vim-colors-solarized'
 
- Bundle 'scrooloose/nerdcommenter'
- Bundle 'scrooloose/syntastic'
- Bundle 'tpope/vim-surround'
-" Bundle 'ervandew/supertab'
- Bundle 'Valloric/YouCompleteMe'
+ Plugin 'scrooloose/nerdcommenter'
+ Plugin 'scrooloose/syntastic'
+ Plugin 'tpope/vim-surround'
+"Plugin 'ervandew/supertab'
+ Plugin 'Valloric/YouCompleteMe'
 
- Bundle 'ack.vim'
+ Plugin 'ack.vim'
 
  filetype plugin indent on     " required!
 
