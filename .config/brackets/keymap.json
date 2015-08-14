@@ -14,7 +14,6 @@
         "Ctrl--": "view.decreaseFontSize",
         "Ctrl-/": "edit.lineComment",
         "Ctrl-Alt-C": "codefolding.collapse",
-        "Ctrl-Alt-D": "funcdocr",
         "Ctrl-Alt-F7": "de.richter.brackets.extension.brackets-sort-text.uniqueLines",
         "Ctrl-Alt-H": "view.hideSidebar",
         "Ctrl-Alt-L": "edit.splitSelIntoLines",

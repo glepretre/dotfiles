@@ -1,14 +1,10 @@
 {
     "brackets-indent-guides.enabled": true,
     "brackets-indent-guides.guideColor": "#525252",
-    "brackets-snippets.snippetsDirectory": "data",
-    "brackets-snippets.triggerSnippetShortcut": "Ctrl-Alt-Space",
-    "brackets-snippets.showSnippetsPanelShortcut": null,
     "brackets-ruler.guideEnabled": true,
     "brackets-ruler.rulerEnabled": true,
     "brackets-ruler.guidePosition": 80,
     "brackets-wsSanitizer.enabled": true,
-    "brackets-wsSanitizer.notification": false,
     "closeBrackets": true,
     "closeTags": {
         "whenOpening": true,
@@ -137,10 +133,21 @@
             "patterns": [
                 "vendor"
             ]
+        },
+        {
+            "name": "tests",
+            "patterns": [
+                "*_test.js",
+                "dist",
+                "bower",
+                "node_modules",
+                "proto",
+                "e2e"
+            ]
         }
     ],
-    "funcdocr.autoindent_enter": true,
-    "funcdocr.autoindent_tab": true,
+    "fonts.fontSize": "12px",
+    "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
     "highlightMatches": true,
     "insertHintOnTab": true,
     "language": {
@@ -156,7 +163,7 @@
         "": "bash"
     },
     "linting.enabled": true,
-    "linting.collapsed": true,
+    "linting.collapsed": false,
     "markdown-preview.useGFM": true,
     "markdown-preview.theme": "dark",
     "mikaeljorhult.bracketsTodo.enabled": false,
