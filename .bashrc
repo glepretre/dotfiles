@@ -100,3 +100,6 @@ export HISTCONTROL=ignorespace   # leading space hides commands from history
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file sync
 bind '"\C-r": "\C-a hh \C-j"'    # bind hh to Ctrl-r
 
+export GOPATH="/home/gilles/.go"
+# go binaries
+PATH="${HOME}/.go/bin:${PATH}"
