@@ -17,6 +17,9 @@ alias ct="google-chrome-unstable --incognito --user-data-dir=/tmp"
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
 
+#Find files easily
+alias ff='sh -c '\''find . -name *"$1"* | grep --color "$1"'\'' -'
+
 # Firefox Test (clean environment)
 alias ft="firefox-nightly -no-remote -profile "/tmp" -private-window"
 
