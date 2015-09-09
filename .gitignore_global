@@ -2,5 +2,6 @@
 *.log
 *.todo
 *.latest-stash
+*.swp
 node_modules
 bower_components
