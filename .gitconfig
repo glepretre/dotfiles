@@ -13,8 +13,8 @@
   cb = checkout -b
   cm = commit -m
   co = checkout
-  dc = diff --cached
-  df = diff
+  dc = icdiff --cached
+  df = icdiff
   dms = diff master --stat
   ds = diff --stat
   last = log --all -n 1 --pretty=format:%H
