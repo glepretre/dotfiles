@@ -117,6 +117,13 @@
             "scope": "javascript",
             "text": "expect(${1}).toEqual(${2});",
             "mTime": 1437120863215
+        },
+        {
+            "trigger": "us",
+            "description": "use strict",
+            "scope": "javascript",
+            "text": "'use strict';",
+            "mTime": 1442997653685
         }
     ],
     "fileFilters": [
@@ -129,9 +136,11 @@
             ]
         },
         {
-            "name": "vendor",
+            "name": "vendor, libraries, deploy",
             "patterns": [
-                "vendor"
+                "vendor",
+                "libraries",
+                "deploy"
             ]
         },
         {
@@ -142,12 +151,16 @@
                 "bower",
                 "node_modules",
                 "proto",
-                "e2e"
+                "e2e",
+                "spec"
             ]
         }
     ],
     "fonts.fontSize": "12px",
     "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
+    "guidelines.columns": "80",
+    "guidelines.columnColor": "#B0B4B9",
+    "guidelines.enabled": true,
     "highlightMatches": true,
     "insertHintOnTab": true,
     "language": {
@@ -163,7 +176,7 @@
         "": "bash"
     },
     "linting.enabled": true,
-    "linting.collapsed": false,
+    "linting.collapsed": true,
     "markdown-preview.useGFM": true,
     "markdown-preview.theme": "dark",
     "mikaeljorhult.bracketsTodo.enabled": false,
@@ -186,7 +199,10 @@
                 "node_modules",
                 "dist"
             ],
-            "excludeFiles": []
+            "excludeFiles": [
+                "application.css",
+                "base.css"
+            ]
         },
         "sort": {
             "done": true
