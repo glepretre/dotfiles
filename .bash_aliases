@@ -1,3 +1,6 @@
+#list all defined aliases
+alias aliases="compgen -a"
+
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
