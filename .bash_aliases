@@ -37,5 +37,8 @@ alias merde='eval $(thefuck $(fc -ln -1))'
 # Echo paths nicely
 alias paths="echo $PATH | tr -s ':' '\n'"
 
+# Convert pdf to images to print them easily
+alias pdf2image="convert -verbose -density 300 -quality 100 $1 $2"
+
 # Update & upgrade packages
 alias up="sudo apt-get update && sudo apt-get upgrade"
