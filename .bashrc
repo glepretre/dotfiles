@@ -103,3 +103,7 @@ bind '"\C-r": "\C-a hh \C-j"'    # bind hh to Ctrl-r
 export GOPATH="/home/gilles/.go"
 # go binaries
 PATH="${HOME}/.go/bin:${PATH}"
+
+# pass: unix standard password manager
+# Enable bash auto-completion
+source_if_exists /etc/bash_completion.d/password-store
