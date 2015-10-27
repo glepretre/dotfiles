@@ -128,34 +128,47 @@
     ],
     "fileFilters": [
         {
-            "name": "dist/bower/npm",
+            "name": "fatFolders",
             "patterns": [
-                "dist",
+                ".latest-stash",
                 "bower_components",
-                "node_modules"
-            ]
-        },
-        {
-            "name": "vendor, libraries, deploy",
-            "patterns": [
-                "vendor",
+                "build",
+                "db",
+                "deploy",
+                "dist",
+                "lib",
                 "libraries",
-                "deploy"
+                "log",
+                "node_modules",
+                "tools",
+                "vendor"
             ]
         },
         {
-            "name": "tests",
+            "name": "fatFolders+tests",
             "patterns": [
                 "*_test.js",
-                "dist",
+                ".latest-stash",
                 "bower",
+                "bower_components",
+                "build",
+                "db",
+                "deploy",
+                "dist",
+                "e2e",
+                "lib",
+                "libraries",
+                "log",
                 "node_modules",
                 "proto",
-                "e2e",
-                "spec"
+                "spec",
+                "tools",
+                "vendor"
             ]
         }
     ],
+    "findInFiles.instantSearch": false,
+    "findInFiles.nodeSearch": false,
     "fonts.fontSize": "12px",
     "fonts.fontFamily": "'SourceCodePro-Medium', ＭＳ ゴシック, 'MS Gothic', monospace",
     "guidelines.columns": "80",
@@ -196,10 +209,19 @@
             "scope": "project",
             "excludeFolders": [
                 "bower_components",
+                "build",
+                "db",
+                "deploy",
+                "dist",
+                "lib",
+                "libraries",
+                "log",
                 "node_modules",
-                "dist"
+                "tools",
+                "vendor"
             ],
             "excludeFiles": [
+                ".latest-stash",
                 "application.css",
                 "base.css"
             ]
