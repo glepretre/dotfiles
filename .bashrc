@@ -91,10 +91,10 @@ LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:c
 # https://github.com/dvorka/hstr
 # export HH_CONFIG=hicolor         # get more colors
 # export HH_CONFIG=warning         # show warnings
-# export HH_CONFIG=rawhistory    # show normal history by default (instead of metrics-based view)
-export HH_CONFIG=hicolor,warning # concat config with commas
-shopt -s histappend              # append new history items to .bash_history
-export HISTCONTROL=ignorespace   # leading space hides commands from history
+# export HH_CONFIG=rawhistory      # show normal history by default (instead of metrics-based view)
+export HH_CONFIG=hicolor,warning   # concat config with commas
+# shopt -s histappend              # append new history items to .bash_history
+# export HISTCONTROL=ignorespace   # leading space hides commands from history
 # export HISTFILESIZE=10000        # increase history file size (default is 500)
 # export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file sync
