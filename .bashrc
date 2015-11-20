@@ -98,7 +98,9 @@ export HH_CONFIG=hicolor,warning   # concat config with commas
 # export HISTFILESIZE=10000        # increase history file size (default is 500)
 # export HISTSIZE=${HISTFILESIZE}  # increase history size (default is 500)
 export PROMPT_COMMAND="history -a; history -n; ${PROMPT_COMMAND}"   # mem/file sync
-bind '"\C-r": "\C-a hh \C-j"'    # bind hh to Ctrl-r
+if hash hh 2>/dev/null; then
+  bind '"\C-r": "\C-a hh \C-j"'    # bind hh to Ctrl-r if hh is installed
+fi
 
 export GOPATH="/home/gilles/.go"
 # go binaries
