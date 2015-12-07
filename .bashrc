@@ -113,3 +113,6 @@ PATH="${HOME}/.go/bin:${PATH}"
 # pass: unix standard password manager
 # Enable bash auto-completion
 source_if_exists /etc/bash_completion.d/password-store
+
+# Colorize grep output smartly
+export GREP_OPTIONS='--color=auto'
