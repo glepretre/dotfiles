@@ -124,6 +124,13 @@
             "scope": "javascript",
             "text": "'use strict';",
             "mTime": 1442997653685
+        },
+        {
+            "scope": "html",
+            "trigger": "doctype",
+            "description": "doctype",
+            "text": "<!DOCTYPE html>\n<html>\n  <head>\n    <meta charset=\"UTF-8\">\n    <title>Title</title>\n    <script src=\"\"></script>\n    <link rel=\"stylesheet\" href=\"\">\n  </head>\n\n  <body>\n  </body>\n</html>\n",
+            "mTime": 1449659684830
         }
     ],
     "fileFilters": [
