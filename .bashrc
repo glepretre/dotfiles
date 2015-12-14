@@ -66,7 +66,10 @@ source_if_exists ~/sources/clones/bash-git-prompt/gitprompt.sh && GIT_PROMPT_ONL
 PATH="${HOME}/node_modules/.bin:${PATH}"
 # rbenv
 PATH="${HOME}/.rbenv/bin:${PATH}"
-eval "$(rbenv init -)"
+# Init rbenv when available
+if hash rbenv 2>/dev/null; then
+  eval "$(rbenv init -)"
+fi
 #rbenv shell 1.9.3-p448
 
 # /sbin scripts
