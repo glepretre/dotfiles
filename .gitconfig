@@ -15,6 +15,7 @@
   co = checkout
   dc = icdiff --cached
   df = icdiff
+  dm = icdiff master
   dms = diff master --stat
   ds = diff --stat
   last = log --all -n 1 --pretty=format:%H
