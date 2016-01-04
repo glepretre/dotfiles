@@ -117,5 +117,5 @@ PATH="${HOME}/.go/bin:${PATH}"
 # Enable bash auto-completion
 source_if_exists /etc/bash_completion.d/password-store
 
-# Colorize grep output smartly
-export GREP_OPTIONS='--color=auto'
+# Colorize grep output
+alias grep="grep --color=auto"
