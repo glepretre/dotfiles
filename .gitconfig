@@ -13,6 +13,7 @@
   cb = checkout -b
   cm = commit -m
   co = checkout
+  cv = commit -v
   dc = icdiff --cached
   df = icdiff
   dm = icdiff master
