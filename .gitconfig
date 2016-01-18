@@ -14,6 +14,7 @@
   cm = commit -m
   co = checkout
   cv = commit -v
+  cp = cherry-pick
   dc = icdiff --cached
   df = icdiff
   dm = icdiff master
