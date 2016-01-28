@@ -13,6 +13,7 @@
   cb = checkout -b
   cm = commit -m
   co = checkout
+  count = rev-list --count
   cv = commit -v
   cp = cherry-pick
   dc = icdiff --cached
