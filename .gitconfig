@@ -34,3 +34,5 @@
   default = simple
 [init]
   templatedir = /home/gilles/.git-templates
+[commit]
+  gpgSign = true
