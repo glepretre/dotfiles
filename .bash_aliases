@@ -15,7 +15,7 @@ alias c="clear"
 alias count="expr length"
 
 # Chrome Test (clean environment)
-alias ct="google-chrome-unstable --incognito --user-data-dir=/tmp"
+alias ct="google-chrome-unstable --incognito --user-data-dir=`mktemp -d`"
 
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
@@ -24,7 +24,7 @@ alias explore="xdg-open ./"
 alias ff='sh -c '\''find . -name *"$1"* | grep --color "$1"'\'' -'
 
 # Firefox Test (clean environment)
-alias ft="firefox-nightly -no-remote -profile "/tmp" -private-window"
+alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
 
 # Enhanced file listing
 alias ls="ls --color=auto"
