@@ -26,6 +26,9 @@ alias ff='sh -c '\''find . -name *"$1"* | grep --color "$1"'\'' -'
 # Firefox Test (clean environment)
 alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
 
+# Smaller hamster
+alias hamster="hamster-time-tracker"
+
 # Enhanced file listing
 alias ls="ls --color=auto"
 alias ll="ls -lAh --color=auto"
