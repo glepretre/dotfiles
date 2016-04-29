@@ -45,11 +45,18 @@ shopt -s checkwinsize
 # And a nice customized prompt string
 case "$TERM" in
 xterm*|rxvt*)
+  if [ $(id -u) -eq 0 ]; then
+    # Root
+    export PROMPT_COMMAND=""
+    PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\t \[$(tput setaf 4)\][\[$(tput setaf 1)\]\u\[$(tput setaf 1)\]@\[$(tput setaf 1)\]\h\[$(tput setaf 1)\]\[$(tput setaf 4)\]] \w\[$(tput setaf 4)\] \\$ \[$(tput sgr0)\]"
+  else
+    # User
     PROMPT_COMMAND='echo -ne "\033]0;${PWD##*/}\007"'
     PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\t \[$(tput setaf 4)\][\[$(tput setaf 2)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 2)\]\h\[$(tput setaf 2)\]\[$(tput setaf 4)\]] \w\[$(tput setaf 4)\] \\$ \[$(tput sgr0)\]"
-    ;;
+  fi
+  ;;
 *)
-    ;;
+  ;;
 esac
 
 # Add an "alert" alias for long running commands.  Use like so:
