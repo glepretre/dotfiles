@@ -15,7 +15,12 @@ alias c="clear"
 alias count="expr length"
 
 # Chrome Test (clean environment)
-alias ct="google-chrome-unstable --incognito --user-data-dir=`mktemp -d`"
+alias ct="google-chrome-unstable \
+          --incognito \
+          --no-default-browser-check \
+          --no-first-run \
+          --disable-default-apps \
+          --user-data-dir=`mktemp -d`"
 
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
