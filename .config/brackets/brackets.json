@@ -182,6 +182,7 @@
     "guidelines.columnColor": "#B0B4B9",
     "guidelines.enabled": true,
     "highlightMatches": true,
+    "hirse.beautify.onSave": false,
     "insertHintOnTab": true,
     "language": {
         "javascript": {
