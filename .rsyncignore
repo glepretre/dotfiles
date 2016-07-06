@@ -23,6 +23,7 @@
 .npm/
 .rbenv/
 .themes/
+.thunderbird/
 .thumbnails/
 .toxic/
 Desktop/
