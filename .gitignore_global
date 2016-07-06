@@ -1,3 +1,6 @@
+*.csslintrc
+*.htmlhintrc
+*.jsbeautifyrc
 *.latest-stash
 *.log
 *.swp
