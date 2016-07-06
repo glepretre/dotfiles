@@ -30,6 +30,8 @@
     "git-stats": "latest",
     "git-stats-importer": "latest",
     "http-response": "latest",
+    "jscs": "~3.0.6",
+    "jshint": "~2.9.2",
     "idea": "latest",
     "madge": "latest",
     "pomo": "latest",
