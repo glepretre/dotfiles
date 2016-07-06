@@ -14,7 +14,15 @@ alias c="clear"
 # Count characters in a string
 alias count="expr length"
 
-# Chrome Test (clean environment)
+# Chrome Stable (clean environment)
+alias cs="google-chrome-stable \
+          --incognito \
+          --no-default-browser-check \
+          --no-first-run \
+          --disable-default-apps \
+          --user-data-dir=`mktemp -d`"
+
+# Chrome-dev Test (clean environment)
 alias ct="google-chrome-unstable \
           --incognito \
           --no-default-browser-check \
