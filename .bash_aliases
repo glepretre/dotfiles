@@ -36,7 +36,10 @@ alias explore="xdg-open ./"
 #Find files easily
 alias ff='sh -c '\''find . -name *"$1"* | grep --color "$1"'\'' -'
 
-# Firefox Test (clean environment)
+# Firefox Stable (clean environment)
+alias fs='firefox -no-remote -profile "`mktemp -d`" -private-window'
+
+# Firefox-nightly Test (clean environment)
 alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
 
 # Smaller hamster
