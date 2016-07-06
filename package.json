@@ -24,6 +24,7 @@
   "devDependencies": {
     "ajour": "latest",
     "bower": "~1.7.2",
+    "dev-time-cli": "latest",
     "elementor": "latest",
     "fuck-you": "latest",
     "ghcal": "latest",
@@ -36,6 +37,7 @@
     "idea": "latest",
     "madge": "latest",
     "pomo": "latest",
+    "polyjuice": "latest",
     "sloc": "latest",
     "tldr": "latest",
     "tzloc": "latest"
