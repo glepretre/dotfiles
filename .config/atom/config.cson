@@ -1,6 +1,7 @@
 "*":
   core:
     audioBeep: false
+    closeEmptyWindows: false
     disabledPackages: [
       "language-clojure"
       "language-go"
