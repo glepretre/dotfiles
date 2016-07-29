@@ -54,7 +54,8 @@ alias ll="ls -lAh --color=auto"
 alias merde='eval $(thefuck $(fc -ln -1))'
 
 # Add local node modules binaries to $PATH
-alias npm-path="PATH=$(npm bin):$PATH"
+# NOTE: Keep the single quotes.
+alias npm-path='PATH=$(npm bin):$PATH'
 
 # Echo paths nicely
 alias paths="echo $PATH | tr -s ':' '\n'"
