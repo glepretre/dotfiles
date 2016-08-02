@@ -19,7 +19,7 @@
     "karma-phantomjs-launcher": "~1.0.1",
     "karma-requirejs": "~1.0.0",
     "karma-script-launcher": "~1.0.0",
-    "phantomjs": "~2.1.7",
+    "phantomjs-prebuilt": "~2.1.9",
     "protractor": "~4.0.0",
     "requirejs": "~2.2.0"
   },
