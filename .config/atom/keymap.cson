@@ -18,7 +18,7 @@
   'ctrl-d': 'editor:duplicate-lines'
   'ctrl-r': 'es-identifier-highlight:renameIdentifier'
   'ctrl-shift-d': 'editor:delete-line'
-  'f7': 'sort-lines:sort'
+  'f7': 'sort-lines:natural'
 #
 # 'atom-workspace':
 #   'ctrl-shift-p': 'core:move-up'
