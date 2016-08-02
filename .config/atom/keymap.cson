@@ -13,6 +13,7 @@
 'body':
   'f5': 'window:reload'
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-shift-W': 'tabs:close-all-tabs'
 
 '.platform-linux atom-text-editor:not([mini])':
   'ctrl-d': 'editor:duplicate-lines'
