@@ -19,7 +19,10 @@
       "refactor"
       "es-identifier-highlight"
       "sort-lines"
+      "csslint"
     ]
+  csslint:
+    hideOnNoErrors: true
   editor:
     invisibles: {}
   "exception-reporting":
