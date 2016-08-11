@@ -40,3 +40,5 @@
   templatedir = /home/gilles/.git-templates
 [commit]
   gpgSign = true
+[credential]
+  helper = cache --timeout=600
