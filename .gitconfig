@@ -42,3 +42,5 @@
   gpgSign = true
 [credential]
   helper = cache --timeout=600
+[credential "https://github.com"]
+  username = glepretre
