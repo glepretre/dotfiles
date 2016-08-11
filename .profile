@@ -16,4 +16,7 @@ if [ -n "$BASH_VERSION" ]; then
   fi
 fi
 
-eval $(gpg-agent --daemon)
+# keychain is an ssh and gpg-agent wrapper
+# Load default SSH key when available
+eval `keychain --clear --confirm --ignore-missing --eval id_rsa`
+
