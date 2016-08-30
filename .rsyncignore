@@ -19,6 +19,7 @@
 .gnupg/
 .icons/
 .local/
+.lolcommits/
 .mozilla/
 .npm/
 .rbenv/
