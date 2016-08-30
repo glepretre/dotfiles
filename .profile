@@ -18,5 +18,5 @@ fi
 
 # keychain is an ssh and gpg-agent wrapper
 # Load default SSH key when available
-eval `keychain --clear --confirm --ignore-missing --eval id_rsa`
+eval `keychain --clear --ignore-missing --eval id_rsa`
 
