@@ -23,6 +23,7 @@
 .mozilla/
 .npm/
 .rbenv/
+.TelegramDesktop/
 .themes/
 .thunderbird/
 .thumbnails/
