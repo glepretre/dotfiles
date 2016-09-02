@@ -17,6 +17,9 @@
   'block-comment':
     'prefix': '/**'
     'body': '/*\n * $1\n */'
+  'console-log':
+    'prefix': 'cl'
+    'body': 'console.log($1);'
   'describe':
     'prefix': 'describe'
     'body': 'describe(\'$1\', function() {\n  $2\n});'
