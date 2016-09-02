@@ -29,6 +29,9 @@
   'fun':
     'prefix': 'fun'
     'body': 'function() {\n  $1\n};'
+  'use-strict':
+    'prefix': 'us'
+    'body': '\'use strict\';'
 
 # Each scope (e.g. '.source.coffee' above) can only be declared once.
 #
