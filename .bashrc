@@ -129,3 +129,7 @@ source_if_exists /etc/bash_completion.d/password-store
 
 # Colorize grep output
 alias grep="grep --color=auto"
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
