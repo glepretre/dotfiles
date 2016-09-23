@@ -14,6 +14,7 @@
       "package-generator"
       "symbols-view"
       "language-toml"
+      "spell-check"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
