@@ -20,6 +20,9 @@
   'console-log':
     'prefix': 'cl'
     'body': 'console.log($1);'
+  'define':
+    'prefix': 'define'
+    'body': 'define([$1], function() {\n  \'use strict\';\n\n  $2\n});'
   'describe':
     'prefix': 'describe'
     'body': 'describe(\'$1\', function() {\n  $2\n});'
