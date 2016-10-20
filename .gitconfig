@@ -45,3 +45,5 @@
   helper = cache --timeout=600
 [credential "https://github.com"]
   username = glepretre
+[format]
+  pretty = fuller
