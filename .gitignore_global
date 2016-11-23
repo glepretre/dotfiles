@@ -3,6 +3,7 @@
 *.jsbeautifyrc
 *.latest-stash
 *.log
+*.pem
 *.swp
 *.todo
 *~
