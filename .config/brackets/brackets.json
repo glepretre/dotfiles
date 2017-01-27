@@ -197,7 +197,7 @@
         "": "bash"
     },
     "linting.enabled": true,
-    "linting.collapsed": true,
+    "linting.collapsed": false,
     "markdown-preview.useGFM": true,
     "markdown-preview.theme": "dark",
     "mikaeljorhult.bracketsTodo.enabled": false,
