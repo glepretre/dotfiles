@@ -30,6 +30,9 @@ alias ct="google-chrome-unstable \
           --disable-default-apps \
           --user-data-dir=`mktemp -d`"
 
+# Print directories size
+alias dsize="du -sh * | sort -hr"
+
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
 
