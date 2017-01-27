@@ -23,6 +23,8 @@
   df = icdiff
   dm = icdiff master
   dms = diff master --stat
+  dr = !ANCESTOR=$(git merge-base HEAD origin/master) && git icdiff $ANCESTOR..HEAD
+  drs = !ANCESTOR=$(git merge-base HEAD origin/master) && git diff --stat $ANCESTOR..HEAD
   ds = diff --stat
   last = log --all -n 1 --pretty=format:%H
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
