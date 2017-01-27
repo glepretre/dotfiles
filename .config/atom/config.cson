@@ -22,6 +22,7 @@
       "sort-lines"
       "csslint"
     ]
+    telemetryConsent: "limited"
   csslint:
     hideOnNoErrors: true
   editor:
