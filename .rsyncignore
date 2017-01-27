@@ -28,6 +28,7 @@
 .thunderbird/
 .thumbnails/
 .toxic/
+.vagrant.d/
 Desktop/
 Documents/personal/
 Downloads/
