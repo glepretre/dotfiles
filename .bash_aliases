@@ -36,6 +36,9 @@ alias dsize="du -sh * | sort -hr"
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
 
+# Print current folder size
+alias fat="du -ch | grep total"
+
 #Find files easily
 alias ff='sh -c '\''find . -name *"$1"* | grep --color "$1"'\'' -'
 
