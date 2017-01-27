@@ -137,3 +137,8 @@ export NVM_DIR="$HOME/.nvm"
 # Android emulator
 PATH="/mnt/HDD/android/tools:$PATH"
 PATH="/mnt/HDD/android/platform-tools:$PATH"
+
+# https://twitter.com/fabi1cazenave/status/793797163067277312
+recently_modified_files() {
+  find $1 -mtime -1 -print
+}
