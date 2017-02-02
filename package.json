@@ -8,21 +8,21 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
-    "bower": "~1.7.9",
+    "bower": "~1.8.0",
     "jscs": "~3.0.7",
     "jshint": "~2.9.2",
-    "karma": "~1.1.2",
-    "karma-chrome-launcher": "~1.0.1",
+    "karma": "~1.4.1",
+    "karma-chrome-launcher": "~2.0.0",
     "karma-cli": "~1.0.1",
     "karma-firefox-launcher": "~1.0.0",
-    "karma-jasmine": "~1.0.2",
+    "karma-jasmine": "~1.1.0",
     "karma-phantomjs-launcher": "~1.0.1",
-    "karma-requirejs": "~1.0.0",
+    "karma-requirejs": "~1.1.0",
     "karma-script-launcher": "~1.0.0",
     "phantomjs-prebuilt": "~2.1.9",
     "plato": "~1.7.0",
-    "protractor": "~4.0.0",
-    "requirejs": "~2.2.0"
+    "protractor": "~5.1.0",
+    "requirejs": "~2.3.2"
   },
   "devDependencies": {
     "ajour": "latest",
