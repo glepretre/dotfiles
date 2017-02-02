@@ -36,6 +36,7 @@
     "http-server": "latest",
     "idea": "latest",
     "madge": "latest",
+    "npms-cli": "latest",
     "package-json-validator": "latest",
     "polyjuice": "latest",
     "pomo": "latest",
