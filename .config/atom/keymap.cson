@@ -14,6 +14,7 @@
   'f5': 'window:reload'
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
   'alt-s': 'core:save-as'
+  'ctrl-shift-s': 'window:save-all'
   'ctrl-shift-W': 'tabs:close-all-tabs'
 
 '.platform-linux atom-text-editor:not([mini])':
