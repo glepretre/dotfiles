@@ -48,6 +48,9 @@ alias fs='firefox -no-remote -profile "`mktemp -d`" -private-window'
 # Firefox-nightly Test (clean environment)
 alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
 
+# Print history with 1 char
+alias h="history"
+
 # Smaller hamster
 alias hamster="hamster-time-tracker"
 
