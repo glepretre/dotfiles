@@ -69,6 +69,9 @@ alias paths="echo $PATH | tr -s ':' '\n'"
 # Convert pdf to images to print them easily
 alias pdf2image="convert -verbose -density 300 -quality 100 $1 $2"
 
+# Reset terminal with 1 char
+alias r="reset"
+
 # Always color tree output
 alias tree="tree -C"
 
