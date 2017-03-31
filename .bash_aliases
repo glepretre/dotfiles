@@ -54,6 +54,9 @@ alias h="history"
 # Smaller hamster
 alias hamster="hamster-time-tracker"
 
+# MATE lock screen
+alias lock="mate-screensaver-command --lock"
+
 # Enhanced file listing
 alias ls="ls --color=auto"
 alias ll="ls -lAh --color=auto"
