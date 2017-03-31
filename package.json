@@ -9,6 +9,7 @@
   "private": true,
   "dependencies": {
     "bower": "~1.8.0",
+    "bower-locker": "~1.0.7",
     "jscs": "~3.0.7",
     "jshint": "~2.9.2",
     "karma": "~1.4.1",
