@@ -40,7 +40,7 @@ alias explore="xdg-open ./"
 alias fat="du -ch | grep total"
 
 #Find files easily
-alias ff='sh -c '\''find . -name *"$1"* | grep --color "$1"'\'' -'
+alias ff='sh -c '\''find . -iname *"$1"* | grep --color --ignore-case "$1"'\'' -'
 
 # Firefox Stable (clean environment)
 alias fs='firefox -no-remote -profile "`mktemp -d`" -private-window'
