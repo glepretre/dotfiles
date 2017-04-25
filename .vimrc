@@ -13,7 +13,7 @@
  Plugin 'git://git.wincent.com/command-t.git'
 
 "Plugin 'Lokaltog/vim-powerline'
- Plugin 'altercation/vim-colors-solarized'
+"Plugin 'altercation/vim-colors-solarized'
 
  Plugin 'scrooloose/nerdcommenter'
  Plugin 'scrooloose/syntastic'
