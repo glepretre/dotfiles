@@ -1,4 +1,4 @@
-#list all defined aliases
+# List all defined aliases
 alias aliases="compgen -a"
 
 # Navigation
