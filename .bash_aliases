@@ -1,3 +1,7 @@
+# Make ack case-insensitive
+# and ignore error messages by default
+alias ack="ack -si"
+
 # List all defined aliases
 alias aliases="compgen -a"
 
