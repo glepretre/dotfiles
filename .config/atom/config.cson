@@ -38,6 +38,8 @@
     onlyConfig: true
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
+  "linter-ui-default":
+    showPanel: true
   "spell-check": {}
   tabs:
     enableVcsColoring: true
