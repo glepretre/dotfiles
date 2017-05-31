@@ -36,6 +36,7 @@
     "http-response": "latest",
     "http-server": "latest",
     "idea": "latest",
+    "jsonlint-cli": "latest",
     "madge": "latest",
     "npms-cli": "latest",
     "package-json-validator": "latest",
