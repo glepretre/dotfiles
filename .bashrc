@@ -25,6 +25,11 @@ source_if_exists /etc/bash_completion
 # Ignore lines starting with space in history logging
 HISTCONTROL=ignorespace
 
+# Do not record commands and patterns
+# defined into .histignore file
+# HISTIGNORE="rm *:git co .:git su"
+[ -f .histignore ] && HISTIGNORE=$(tr '\n' ':' < .histignore)
+
 # append to the history file, don't overwrite it
 shopt -s histappend
 
