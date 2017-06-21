@@ -37,6 +37,9 @@ alias ct="google-chrome-unstable \
 # Print directories size
 alias dsize="du -sh * | sort -hr"
 
+# Print directories size including dotfiles
+alias dsize-all="du -shc .??* * | sort -hr"
+
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
 
