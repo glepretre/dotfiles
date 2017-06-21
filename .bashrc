@@ -147,3 +147,8 @@ PATH="/mnt/HDD/android/platform-tools:$PATH"
 recently_modified_files() {
   find $1 -mtime -1 -print
 }
+
+mkcd () {
+  mkdir "$1"
+  cd "$1"
+}
