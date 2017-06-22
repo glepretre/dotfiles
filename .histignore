@@ -1,3 +1,4 @@
 rm *
 git co .
 git su
+git reset *
