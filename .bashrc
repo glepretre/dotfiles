@@ -152,3 +152,8 @@ mkcd () {
   mkdir "$1"
   cd "$1"
 }
+
+# Enable unzip and zipinfo autocomplete for .lim and .bor files
+# https://unix.stackexchange.com/a/108646/229657
+complete -f -X '!*.@(zip|lim|bor)' unzip
+complete -f -X '!*.@(zip|lim|bor)' zipinfo
