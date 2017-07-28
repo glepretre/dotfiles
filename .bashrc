@@ -28,7 +28,7 @@ HISTCONTROL=ignorespace
 # Do not record commands and patterns
 # defined into .histignore file
 # HISTIGNORE="rm *:git co .:git su"
-[ -f .histignore ] && HISTIGNORE=$(tr '\n' ':' < .histignore)
+[ -f .histignore ] && HISTIGNORE="*$(cat .histignore | sed ':a;N;$!ba;s/\n/\*\:\*/g')*"
 
 # append to the history file, don't overwrite it
 shopt -s histappend

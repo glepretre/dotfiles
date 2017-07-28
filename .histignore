@@ -1,8 +1,8 @@
 git checkout .
 git co .
-git reset *
+git reset
 git sd
 git stash drop
 git stash pop
 git su
-rm *
+rm
