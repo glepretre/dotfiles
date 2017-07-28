@@ -1,6 +1,6 @@
-rm *
 git co .
-git su
 git reset *
 git sd
 git stash drop
+git su
+rm *
