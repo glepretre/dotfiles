@@ -5,4 +5,5 @@ git sd
 git stash drop
 git stash pop
 git su
-rm
+rm -f
+rm -rf
