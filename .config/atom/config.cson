@@ -15,6 +15,7 @@
       "symbols-view"
       "language-toml"
       "spell-check"
+      "github"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
