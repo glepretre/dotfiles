@@ -16,6 +16,7 @@
       "language-toml"
       "spell-check"
       "github"
+      "language-sql"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
