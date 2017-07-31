@@ -3,20 +3,20 @@
     audioBeep: false
     closeEmptyWindows: false
     disabledPackages: [
+      "github"
       "language-clojure"
       "language-go"
       "language-java"
-      "language-perl"
       "language-objective-c"
+      "language-perl"
       "language-property-list"
+      "language-sql"
+      "language-toml"
       "metrics"
       "open-on-github"
       "package-generator"
-      "symbols-view"
-      "language-toml"
       "spell-check"
-      "github"
-      "language-sql"
+      "symbols-view"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
