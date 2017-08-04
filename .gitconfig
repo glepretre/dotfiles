@@ -10,7 +10,7 @@
   aa = add --all
   aliases = config --get-regexp alias
   ap = add --all --patch
-  authors = !git ls-tree -r -z --name-only HEAD | xargs -0 -n1 git blame --line-porcelain HEAD |grep "^author "|sort|uniq -c|sort -nr
+  authors = !git ls-tree -r -z --name-only HEAD | xargs -0 -n1 git blame --line-porcelain HEAD | grep '^author '|sort|uniq -c|sort -nr
   ca = commit --amend
   caf = commit --amend --no-edit
   cb = checkout -b
