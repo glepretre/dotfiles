@@ -157,3 +157,8 @@ mkcd () {
 # https://unix.stackexchange.com/a/108646/229657
 complete -f -X '!*.@(zip|lim|bor)' unzip
 complete -f -X '!*.@(zip|lim|bor)' zipinfo
+
+lint() {
+  jscs "$@"
+  jshint "$@"
+}
