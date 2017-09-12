@@ -42,6 +42,7 @@
     disableWhenNoJshintrcFileInPath: true
   "linter-ui-default":
     showPanel: true
+    statusBarRepresents: "Current File"
   "spell-check": {}
   tabs:
     enableVcsColoring: true
