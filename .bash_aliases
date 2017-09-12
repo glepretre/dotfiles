@@ -73,7 +73,7 @@ alias lock="mate-screensaver-command --lock"
 
 # Enhanced file listing
 alias ls="ls --color=auto"
-alias ll="ls -lAh --color=auto"
+alias ll="ls -lAh --time-style long-iso --color=auto"
 
 # https://github.com/nvbn/thefuck
 # NOTE: Keep the single quotes.
