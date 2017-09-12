@@ -67,10 +67,6 @@ xterm*|rxvt*)
   ;;
 esac
 
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
 # bash-git-prompt
 # When running cd (current directory command) onto a git directory
 # show git status in bash
@@ -131,9 +127,6 @@ PATH="${HOME}/.go/bin:${PATH}"
 # pass: unix standard password manager
 # Enable bash auto-completion
 source_if_exists /etc/bash_completion.d/password-store
-
-# Colorize grep output
-alias grep="grep --color=auto"
 
 # nvm
 export NVM_DIR="$HOME/.nvm"

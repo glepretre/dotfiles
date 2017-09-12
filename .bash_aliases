@@ -2,6 +2,10 @@
 # and ignore error messages by default
 alias ack="ack -si"
 
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 # List all defined aliases
 alias aliases="compgen -a"
 
@@ -54,6 +58,9 @@ alias fs='firefox -no-remote -profile "`mktemp -d`" -private-window'
 
 # Firefox-nightly Test (clean environment)
 alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
+
+# Colorize grep output
+alias grep="grep --color=auto"
 
 # Print history with 1 char
 alias h="history"
