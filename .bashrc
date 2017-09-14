@@ -161,8 +161,8 @@ lint() {
 # Enhanced
 function color() {
   function usage () {
-    echo "usage: input | color COLOR PATTERN"
-    echo "COLOR: black, red, green, yellow, blue, magenta, cyan"
+    echo "usage: input | color PATTERN [COLOR]"
+    echo "COLOR: black, red (default), green, yellow, blue, magenta, cyan"
   }
 
   # https://stackoverflow.com/a/20913871/3049002
@@ -180,7 +180,7 @@ function color() {
     return 1
   fi
 
-  if [ $# -ne 2 ]
+  if [ $# -lt 1 ] || [ $# -gt 2 ]
   then
     echo "Wrong number of arguments"
     echo ""
@@ -188,8 +188,12 @@ function color() {
     return 1
   fi
 
-  case "$1" in
+  case "$2" in
+    "")
+      COLOR="red"
+      ;;
     black|red|green|yellow|blue|magenta|cyan)
+      COLOR="$2"
       ;;
     *)
       echo "Unrecognized color"
@@ -209,7 +213,7 @@ function color() {
   fg_color_map[cyan]=36
 
 
-  fg_c=$(echo -e "\\e[1;${fg_color_map[$1]}m")
+  fg_c=$(echo -e "\\e[1;${fg_color_map[$COLOR]}m")
   c_rs=$'\e[0m'
-  sed -u s"/$2/$fg_c\\0$c_rs/g" <<< "$INPUT"
+  sed -u s"/$1/$fg_c\\0$c_rs/g" <<< "$INPUT"
 }
