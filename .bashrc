@@ -155,3 +155,61 @@ lint() {
   jscs "$@"
   jshint "$@"
 }
+
+# Original idea:
+# https://github.com/kepkin/dev-shell-essentials/blob/45da0e2a8da961a146e72cba7fc63da589d89a05/highlight.sh
+# Enhanced
+function color() {
+  function usage () {
+    echo "usage: input | color COLOR PATTERN"
+    echo "COLOR: black, red, green, yellow, blue, magenta, cyan"
+  }
+
+  # https://stackoverflow.com/a/20913871/3049002
+  IFS= read -rd '' -n 1 -t 1 INPUT
+  while IFS= read -rd '' -n 1 -t 1 c
+  do
+    INPUT+=$c
+  done
+
+  if [ -z "$INPUT" ]
+  then
+    echo "No input"
+    echo ""
+    usage
+    return 1
+  fi
+
+  if [ $# -ne 2 ]
+  then
+    echo "Wrong number of arguments"
+    echo ""
+    usage
+    return 1
+  fi
+
+  case "$1" in
+    black|red|green|yellow|blue|magenta|cyan)
+      ;;
+    *)
+      echo "Unrecognized color"
+      echo ""
+      usage
+      return 1
+      ;;
+  esac
+
+  declare -A fg_color_map
+  fg_color_map[black]=30
+  fg_color_map[red]=31
+  fg_color_map[green]=32
+  fg_color_map[yellow]=33
+  fg_color_map[blue]=34
+  fg_color_map[magenta]=35
+  fg_color_map[cyan]=36
+
+
+  fg_c=$(echo -e "\\e[1;${fg_color_map[$1]}m")
+  c_rs=$'\e[0m'
+  sed -u s"/$2/$fg_c\\0$c_rs/g" <<< "$INPUT"
+}
