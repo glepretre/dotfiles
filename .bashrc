@@ -131,6 +131,7 @@ source_if_exists /etc/bash_completion.d/password-store
 # nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+source_if_exists "$NVM_DIR/bash_completion"
 
 # Android emulator
 PATH="/mnt/HDD/android/tools:$PATH"
