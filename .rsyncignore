@@ -18,6 +18,7 @@
 .gem/
 .gnupg/
 .icons/
+.lesshst
 .local/
 .lolcommits/
 .mozilla/
@@ -29,6 +30,7 @@
 .thumbnails/
 .toxic/
 .vagrant.d/
+.viminfo
 Desktop/
 Documents/personal/
 Downloads/
