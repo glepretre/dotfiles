@@ -4,7 +4,6 @@
 **/*/tmp/
 **/*/vendor/assets/components/
 *~
-.Skype/
 .android/
 .bash_history
 .cache/
@@ -24,6 +23,7 @@
 .mozilla/
 .npm/
 .rbenv/
+.Skype/
 .TelegramDesktop/
 .themes/
 .thunderbird/
