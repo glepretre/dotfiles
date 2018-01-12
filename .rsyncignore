@@ -11,6 +11,7 @@
 .config/chromium/
 .config/google-chrome-unstable/
 .config/google-chrome/
+.config/skypeforlinux/
 .config/teamviewer9/
 .config/tox/
 .cpan/
