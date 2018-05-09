@@ -20,6 +20,7 @@
     "karma-phantomjs-launcher": "~1.0.4",
     "karma-requirejs": "~1.1.0",
     "karma-script-launcher": "~1.0.0",
+    "npm-run": "~4.1.2",
     "phantomjs-prebuilt": "~2.1.9",
     "plato": "~1.7.0",
     "protractor": "~5.1.0",
