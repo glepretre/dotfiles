@@ -17,6 +17,9 @@
       "package-generator"
       "spell-check"
       "symbols-view"
+      "angularjs"
+      "js-refactor"
+      "refactor"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
