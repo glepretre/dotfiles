@@ -23,7 +23,7 @@
     "npm-run": "~4.1.2",
     "phantomjs-prebuilt": "~2.1.9",
     "plato": "~1.7.0",
-    "protractor": "~5.1.0",
+    "protractor": "~5.2.0",
     "requirejs": "~2.3.3"
   },
   "devDependencies": {
