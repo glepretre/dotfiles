@@ -6,6 +6,7 @@
   ui = true
 [core]
   excludesfile = ~/.gitignore_global
+  attributesfile = ~/.gitattributes
 [alias]
   aa = add --all
   aliases = config --get-regexp alias
@@ -51,3 +52,5 @@
   username = glepretre
 [format]
   pretty = fuller
+[diff "image"]
+  command = git-imagediff
