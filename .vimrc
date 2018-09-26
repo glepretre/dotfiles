@@ -94,3 +94,22 @@ autocmd InsertEnter,InsertLeave * set cul!
 " let g:solarized_termcolors=16
 syntax enable
 colorscheme monokai
+
+" Highlight all search pattern matches
+set hlsearch
+" Search as you type
+set incsearch
+" NOTE: To override the colorscheme,
+" these changes must be done after it has been set.
+hi Search cterm=NONE ctermbg=blue ctermfg=white gui=NONE guibg=blue guifg=white
+hi IncSearch cterm=NONE ctermbg=blue ctermfg=white gui=NONE guibg=blue guifg=white
+" Remove highlights on <ESC>
+" https://stackoverflow.com/a/1037182/3049002
+nnoremap <silent> <esc> :noh<return><esc>
+nnoremap <esc>^[ <esc>^[
+
+" Case insensitive but smart for searches
+" WARNING: must use /I flag to preserve case when replacing (substitutions)
+" https://stackoverflow.com/a/2288438/3049002
+set ignorecase
+set smartcase
