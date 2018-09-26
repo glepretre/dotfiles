@@ -53,5 +53,3 @@
   username = glepretre
 [format]
   pretty = fuller
-[diff "image"]
-  command = git-imagediff
