@@ -28,6 +28,7 @@
   dr = !ANCESTOR=$(git merge-base HEAD origin/master) && git icdiff $ANCESTOR..HEAD
   drs = !ANCESTOR=$(git merge-base HEAD origin/master) && git diff --stat $ANCESTOR..HEAD
   ds = diff --stat
+  fa = !git fetch && git fetch --tags
   last = log --all -n 1 --pretty=format:%H
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   pr = push-review
