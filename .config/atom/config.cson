@@ -36,6 +36,8 @@
   "exception-reporting":
     userId: "2ab09d56-2ab2-2fc5-7065-f68aca373175"
   "find-and-replace": {}
+  hyperclick:
+    linuxTriggerKeys: "shiftKey,ctrlKey"
   linter:
     lintOnChange: false
   "linter-jscs":
@@ -44,8 +46,15 @@
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
   "linter-ui-default":
+    alwaysTakeMinimumSpace: true
     showPanel: true
     statusBarRepresents: "Current File"
+  pigments:
+    supportedFiletypes: [
+      ".md"
+      ".css"
+    ]
+    traverseIntoSymlinkDirectories: true
   "spell-check": {}
   tabs:
     enableVcsColoring: true
