@@ -40,7 +40,7 @@
   show-icdiff = !git icdiff "$1"^.."$1"
   st = status
   su = !git apply -R .latest-stash && rm .latest-stash
-  up = !git fetch && LAST=$(git log --all -n 1 --pretty=format:%H) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
+  up = !LAST=$(git last) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
 [push]
   default = simple
 [init]
