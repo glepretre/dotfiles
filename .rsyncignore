@@ -40,4 +40,5 @@ Pictures/
 Software/
 node_modules/
 perl5/
+rescue/
 tmp/
