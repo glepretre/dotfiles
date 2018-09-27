@@ -23,6 +23,7 @@
       "refactor"
       "sort-lines"
       "csslint"
+      "atom-ternjs"
     ]
     telemetryConsent: "limited"
   csslint:
