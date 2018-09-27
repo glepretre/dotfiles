@@ -20,7 +20,7 @@
 
 '.platform-linux atom-text-editor:not([mini])':
   'ctrl-d': 'editor:duplicate-lines'
-  'ctrl-r': 'es-identifier-highlight:renameIdentifier'
+  'ctrl-r': 'refactor:rename'
   'ctrl-shift-d': 'editor:delete-line'
   'f7': 'sort-lines:natural'
 #

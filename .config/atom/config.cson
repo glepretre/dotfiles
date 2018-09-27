@@ -18,12 +18,9 @@
       "spell-check"
       "symbols-view"
       "angularjs"
-      "js-refactor"
-      "refactor"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
-      "es-identifier-highlight"
       "sort-lines"
       "csslint"
     ]
@@ -36,6 +33,7 @@
   "exception-reporting":
     userId: "2ab09d56-2ab2-2fc5-7065-f68aca373175"
   "find-and-replace": {}
+  "highlight-selected": {}
   hyperclick:
     linuxTriggerKeys: "shiftKey,ctrlKey"
   linter:
@@ -55,6 +53,9 @@
       ".css"
     ]
     traverseIntoSymlinkDirectories: true
+  refactor:
+    highlightError: false
+    highlightReference: false
   "spell-check": {}
   tabs:
     enableVcsColoring: true
