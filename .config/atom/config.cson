@@ -38,12 +38,15 @@
   hyperclick:
     linuxTriggerKeys: "shiftKey,ctrlKey"
   linter:
+    ignoreGlob: "{**/dist/*.js,**/build/*.js,**/vendor/*.js,**/scripts/web-server.js,**/service-worker.js}"
     lintOnChange: false
+    lintPreviewTabs: false
   "linter-jscs":
     configPath: ".jscsrc"
     onlyConfig: true
   "linter-jshint":
     disableWhenNoJshintrcFileInPath: true
+    lintInlineJavaScript: true
   "linter-ui-default":
     alwaysTakeMinimumSpace: true
     showPanel: true
@@ -60,6 +63,14 @@
   "spell-check": {}
   tabs:
     enableVcsColoring: true
+  "todo-manager":
+    ignoredNames: [
+      "**/node_modules/**"
+      "**/vendor/**"
+      "**/bower_components/**"
+      "**/dist/**"
+      "**/build/**"
+    ]
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
