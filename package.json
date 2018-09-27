@@ -39,6 +39,7 @@
     "idea": "latest",
     "jsonlint-cli": "latest",
     "madge": "latest",
+    "nativefier": "latest",
     "npms-cli": "latest",
     "package-json-validator": "latest",
     "polyjuice": "latest",
