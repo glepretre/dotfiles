@@ -9,5 +9,6 @@
 *.todo
 .~lock.*
 *~
+.lint
 bower_components
 node_modules
