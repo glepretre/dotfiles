@@ -219,15 +219,10 @@ function color() {
   sed -u s"/$1/$fg_c\\0$c_rs/g" <<< "$INPUT"
 }
 
-# keychain is an ssh and gpg-agent wrapper
-# Load default SSH key when available
-#
-# Ask for passphrase with GUI
-# export SSH_ASKPASS="ssh-askpass"
-#
-# --clear is too much,
-# asks passphrase even if ssh'ing to device, everytime
-# original command:
-# eval `keychain --clear --ignore-missing --eval id_rsa`
-# ---
-eval `keychain --quiet --lockwait 0 --ignore-missing --eval id_rsa`
+# NOTE: Leave this at the end as it may stop to prompt passphrase
+# Launch SSH agent and ask for passphrase once at first terminal opening
+if [ -f ${HOME}/bin/ssh-agent-launcher.sh ] && [ -f ${HOME}/.ssh/id_rsa ]
+then
+  eval `${HOME}/bin/ssh-agent-launcher.sh`
+fi
+
