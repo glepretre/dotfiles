@@ -15,12 +15,3 @@ if [ -n "$BASH_VERSION" ]; then
     . "$HOME/.bashrc"
   fi
 fi
-
-# keychain is an ssh and gpg-agent wrapper
-# Load default SSH key when available
-export SSH_ASKPASS="ssh-askpass"
-# --clear is too much,
-# asks passphrase even if ssh'ing to device, everytime
-# original command:
-# eval `keychain --clear --ignore-missing --eval id_rsa`
-eval `keychain --ignore-missing --eval id_rsa`
