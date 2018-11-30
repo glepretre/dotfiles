@@ -38,6 +38,7 @@
   save = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git -c commit.gpgSign=false stash save -u wip-$CURRENT_BRANCH
   sd = stash drop
   show-icdiff = !git icdiff "$1"^.."$1"
+  ss = stash show -p
   st = status
   su = !git apply -R .latest-stash && rm .latest-stash
   up = !LAST=$(git last) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f 3) && git checkout $BRANCH
