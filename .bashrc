@@ -227,3 +227,7 @@ then
   eval `${HOME}/bin/ssh-agent-launcher.sh`
 fi
 
+if [ -f ${HOME}/bin/gpg-agent-launcher.sh ] && [ -f ${HOME}/.gnupg/secring.gpg ]
+then
+  eval `${HOME}/bin/gpg-agent-launcher.sh`
+fi
