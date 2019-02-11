@@ -51,6 +51,8 @@
     alwaysTakeMinimumSpace: true
     showPanel: true
     statusBarRepresents: "Current File"
+  "markdown-preview":
+    useGitHubStyle: true
   pigments:
     supportedFiletypes: [
       ".md"
