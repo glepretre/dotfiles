@@ -28,7 +28,7 @@ HISTCONTROL=ignorespace
 # Do not record commands and patterns
 # defined into .histignore file
 # tricky sed: https://stackoverflow.com/a/1252191/3049002
-[ -f .histignore ] && HISTIGNORE="*$(cat .histignore | sed ':a;N;$!ba;s/\n/\*\:\*/g')*"
+[ -f ${HOME}/.histignore ] && HISTIGNORE="$(cat ${HOME}/.histignore | sed ':a;N;$!ba;s/\n/\:/g')"
 # HISTIGNORE="rm *:git co .:git su"
 
 # append to the history file, don't overwrite it

@@ -1,9 +1,18 @@
-git checkout .
-git co .
-git reset
-git sd
-git stash drop
-git stash pop
-git su
-rm -f
-rm -rf
+* git checkout .*
+* git co .*
+* git reset*
+* git sd*
+* git stash drop *
+* git stash pop *
+* git su*
+* r
+* rm *
+git checkout .*
+git co .*
+git reset*
+git sd*
+git stash drop*
+git stash pop*
+git su*
+r
+rm *
