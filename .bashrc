@@ -224,10 +224,10 @@ function color() {
 # Launch SSH agent and ask for passphrase once at first terminal opening
 if [ -f ${HOME}/bin/ssh-agent-launcher.sh ] && [ -f ${HOME}/.ssh/id_rsa ]
 then
-  eval `${HOME}/bin/ssh-agent-launcher.sh`
+  eval $(${HOME}/bin/ssh-agent-launcher.sh)
 fi
 
 if [ -f ${HOME}/bin/gpg-agent-launcher.sh ] && [ -f ${HOME}/.gnupg/secring.gpg ]
 then
-  eval `${HOME}/bin/gpg-agent-launcher.sh`
+  eval $(${HOME}/bin/gpg-agent-launcher.sh)
 fi
