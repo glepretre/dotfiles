@@ -72,7 +72,7 @@ esac
 # When running cd (current directory command) onto a git directory
 # show git status in bash
 # From: https://github.com/magicmonty/bash-git-prompt.git
-source_if_exists ~/sources/clones/bash-git-prompt/gitprompt.sh && GIT_PROMPT_ONLY_IN_REPO=1
+source_if_exists ~/tools/bash-git-prompt/gitprompt.sh && GIT_PROMPT_ONLY_IN_REPO=1
 
 # NPM modules binaries
 PATH="${HOME}/node_modules/.bin:${PATH}"
@@ -98,7 +98,7 @@ PATH="${HOME}/bin:${PATH}"
 source_if_exists ~/.bash_aliases
 
 # Tiny highlighter function
-source_if_exists ~/sources/clones/hhighlighter/h.sh
+source_if_exists ~/tools/hhighlighter/h.sh
 
 PERL_MB_OPT="--install_base \"/home/gilles/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/gilles/perl5"; export PERL_MM_OPT;
