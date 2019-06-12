@@ -98,6 +98,7 @@ PATH="${HOME}/bin:${PATH}"
 source_if_exists ~/.bash_aliases
 
 # Tiny highlighter function
+# MEMO: rename h function to hl to avoid conflict with h aliased to 'history'
 source_if_exists ~/tools/hhighlighter/h.sh
 
 PERL_MB_OPT="--install_base \"/home/gilles/perl5\""; export PERL_MB_OPT;
