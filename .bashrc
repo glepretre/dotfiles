@@ -8,6 +8,8 @@ source_if_exists() {
 
 # Source global definitions
 source_if_exists /etc/bash.bashrc
+# Private
+source_if_exists ${HOME}/.bashrc_private
 
 # If not running interactively, don't do anything
 case $- in
@@ -75,7 +77,10 @@ esac
 source_if_exists ~/tools/bash-git-prompt/gitprompt.sh && GIT_PROMPT_ONLY_IN_REPO=1
 
 # NPM modules binaries
-PATH="${HOME}/node_modules/.bin:${PATH}"
+# Keep it written in this order, not to override linux built-in with node one's
+# like: https://www.npmjs.com/package/which
+# or https://www.npmjs.com/package/watch
+PATH="${PATH}:${HOME}/node_modules/.bin"
 # rbenv
 PATH="${HOME}/.rbenv/bin:${PATH}"
 # Init rbenv when available
@@ -92,6 +97,9 @@ PATH="/usr/sbin:${PATH}"
 
 # local scripts
 PATH="${HOME}/bin:${PATH}"
+
+# .local scripts
+PATH="${HOME}/.local/bin:${PATH}"
 
 # Alias definitions.
 # Must be loaded after path changes
@@ -153,6 +161,9 @@ mkcd () {
 # https://unix.stackexchange.com/a/108646/229657
 complete -f -X '!*.@(zip|lim|bor)' unzip
 complete -f -X '!*.@(zip|lim|bor)' zipinfo
+
+# https://github.com/hasboeuf/yogit
+eval "$(_YOGIT_COMPLETE=source yogit)"
 
 lint() {
   jscs "$@"

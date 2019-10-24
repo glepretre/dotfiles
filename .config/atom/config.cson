@@ -24,8 +24,10 @@
       "sort-lines"
       "csslint"
       "atom-ternjs"
+      "prettier-atom"
     ]
     telemetryConsent: "limited"
+    useTreeSitterParsers: false
   csslint:
     hideOnNoErrors: true
   editor:
@@ -34,6 +36,9 @@
   "exception-reporting":
     userId: "2ab09d56-2ab2-2fc5-7065-f68aca373175"
   "find-and-replace": {}
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "highlight-selected": {}
   hyperclick:
     linuxTriggerKeys: "shiftKey,ctrlKey"
@@ -59,6 +64,9 @@
       ".css"
     ]
     traverseIntoSymlinkDirectories: true
+  "prettier-atom":
+    formatOnSaveOptions: {}
+    useEslint: true
   refactor:
     highlightError: false
     highlightReference: false

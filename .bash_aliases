@@ -68,6 +68,11 @@ alias h="history"
 # Smaller hamster
 alias hamster="hamster-time-tracker"
 
+# HTTP response status codes
+# https://www.npmjs.com/package/http-response
+# https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
+alias http="http-response"
+
 # MATE lock screen
 alias lock="mate-screensaver-command --lock"
 
