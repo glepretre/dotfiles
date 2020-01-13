@@ -13,6 +13,7 @@
 'body':
   'f5': 'window:reload'
   'ctrl-o': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-q': 'unset!'
   'ctrl-t': 'application:open-file'
   'alt-s': 'core:save-as'
   'ctrl-shift-s': 'window:save-all'
