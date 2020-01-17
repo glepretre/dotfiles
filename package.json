@@ -12,7 +12,7 @@
     "grunt-cli": "^1.3.2"
   },
   "devDependencies": {
-    "@vue/cli": "^3.8.4",
+    "@vue/cli": "3.8.4",
     "fuck-you": "1.3.0",
     "ghcal": "2.3.11",
     "git-standup": "^2.3.1",
