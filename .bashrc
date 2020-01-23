@@ -36,9 +36,11 @@ HISTCONTROL=ignorespace
 # append to the history file, don't overwrite it
 shopt -s histappend
 
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+# https://stackoverflow.com/a/19533853
+export HISTFILE=${HOME}/.bash_eternal_history
+# https://stackoverflow.com/a/12234989
+export HISTSIZE=-1
+export HISTFILESIZE=-1
 export HISTTIMEFORMAT="%F %T  "
 
 # check the window size after each command and, if necessary,
