@@ -25,10 +25,10 @@
     'body': 'define([$1], () => {\n  \'use strict\';\n\n  $2\n});'
   'describe':
     'prefix': 'describe'
-    'body': 'describe(\'$1\', () => {\n  $2\n});'
+    'body': 'describe(\"$1\", () => {\n  $2\n});'
   'it':
     'prefix': 'it'
-    'body': 'it(\'should $1\', () => {\n  $2\n});'
+    'body': 'it("$1\", () => {\n  $2\n});'
   'fun':
     'prefix': 'fun'
     'body': 'function() {\n  $1\n};'
