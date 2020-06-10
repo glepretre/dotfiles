@@ -46,6 +46,10 @@
     ignoreGlob: "{**/dist/*.js,**/build/*.js,**/vendor/*.js,**/scripts/web-server.js,**/service-worker.js}"
     lintOnChange: false
     lintPreviewTabs: false
+  "linter-eslint":
+    disabling:
+      disableWhenNoEslintConfig: false
+    lintHtmlFiles: true
   "linter-jscs":
     configPath: ".jscsrc"
     onlyConfig: true
