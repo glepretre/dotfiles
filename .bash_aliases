@@ -1,3 +1,6 @@
+# Open atom in current folder with 1 char
+alias a="atom ."
+
 # Make ack case-insensitive
 # and ignore error messages by default
 alias ack="ack -si"
@@ -43,6 +46,9 @@ alias dsize="du -sh * | sort -hr"
 
 # Print directories size including dotfiles
 alias dsize-all="du -shc .??* * | sort -hr"
+
+# Open explorer with 1 char
+alias e="xdg-open ./"
 
 # Open explorer at the current working directory
 alias explore="xdg-open ./"
