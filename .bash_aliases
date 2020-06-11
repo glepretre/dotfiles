@@ -68,6 +68,9 @@ alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
 # Colorize grep output
 alias grep="grep --color=auto"
 
+# Google translate in disposable chrome
+alias gtr="cs translate.google.com"
+
 # Print history with 1 char
 alias h="history"
 
