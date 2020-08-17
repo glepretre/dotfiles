@@ -164,12 +164,6 @@ mkcd () {
 complete -f -X '!*.@(zip|lim|bor)' unzip
 complete -f -X '!*.@(zip|lim|bor)' zipinfo
 
-# https://github.com/hasboeuf/yogit
-eval "$(_YOGIT_COMPLETE=source yogit)"
-
-# https://pypi.org/project/gmsaas/
-eval "$(_GMSAAS_COMPLETE=source gmsaas)"
-
 lint() {
   jscs "$@"
   jshint "$@"
