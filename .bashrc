@@ -8,8 +8,6 @@ source_if_exists() {
 
 # Source global definitions
 source_if_exists /etc/bash.bashrc
-# Private
-source_if_exists ${HOME}/.bashrc_private
 
 # If not running interactively, don't do anything
 case $- in
@@ -230,6 +228,9 @@ function color() {
   c_rs=$'\e[0m'
   sed -u s"/$1/$fg_c\\0$c_rs/g" <<< "$INPUT"
 }
+
+# Private
+source_if_exists ${HOME}/.bashrc_private
 
 # NOTE: Leave this at the end as it may stop to prompt passphrase
 # Launch SSH agent and ask for passphrase once at first terminal opening
