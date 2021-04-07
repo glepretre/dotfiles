@@ -18,6 +18,7 @@
       "spell-check"
       "symbols-view"
       "angularjs"
+      "language-babel"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
@@ -42,6 +43,8 @@
   "highlight-selected": {}
   hyperclick:
     linuxTriggerKeys: "shiftKey,ctrlKey"
+  "language-babel":
+    disableWhenNoBabelrcFileInPath: false
   linter:
     ignoreGlob: "{**/dist/*.js,**/build/*.js,**/vendor/*.js,**/scripts/web-server.js,**/service-worker.js}"
     lintOnChange: false
