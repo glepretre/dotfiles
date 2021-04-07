@@ -22,6 +22,7 @@
 '.platform-linux atom-text-editor:not([mini])':
   'ctrl-d': 'editor:duplicate-lines'
   'ctrl-r': 'refactor:rename'
+  'ctrl-shift-c': 'color-picker:open'
   'ctrl-shift-d': 'editor:delete-line'
   'f7': 'sort-lines:natural'
 #
