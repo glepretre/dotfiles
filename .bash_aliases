@@ -60,7 +60,7 @@ alias fat="du -ch | grep total"
 alias ff='sh -c '\''find . -iname *"$1"* | grep --color --ignore-case "$1"'\'' -'
 
 # Firefox Stable (clean environment)
-alias fs='firefox -no-remote -profile "`mktemp -d`" -private-window'
+alias fs='firefox-stable -no-remote -profile "`mktemp -d`" -private-window'
 
 # Firefox-nightly Test (clean environment)
 alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
