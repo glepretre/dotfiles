@@ -8,14 +8,21 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
+    "@vue/cli": "^4.4.6",
+    "bower": "1.8.8",
+    "eslint": "^7.15.0",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-vue": "^6.2.2",
+    "eslint-plugin-vuetify": "^1.0.0-beta.6",
+    "genymotion-cloud": "git+ssh://git@github.com:Genymobile/genymotion-cloud-common-nodejs.git",
+    "grunt-cli": "^1.3.2",
+    "prettier": "^2.0.5",
+    "swagger-cli": "2.3.5",
+    "vuetify": "^2.3.3"
   },
   "devDependencies": {
-    "@vue/cli": "4.5.3",
-    "bower": "1.8.8",
-    "eslint": "7.7.0",
-    "eslint-plugin-html": "6.0.3",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-vue": "6.2.2",
+    "emoj": "^3.1.0",
     "fuck-you": "1.3.0",
     "ghcal": "2.3.12",
     "git-standup": "2.3.2",
@@ -30,11 +37,11 @@
     "npms-cli": "1.6.0",
     "package-json-validator": "0.6.3",
     "pomo": "1.1.1",
-    "prettier": "^2.0.2",
     "sloc": "0.2.1",
     "stopwatch-cli": "1.0.0",
     "tldr": "3.3.2",
     "tzloc": "1.5.2",
-    "vuetify": "2.3.8"
+    "vuetify": "2.3.8",
+    "yarn": "^1.22.10"
   }
 }
