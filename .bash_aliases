@@ -65,6 +65,12 @@ alias fs='firefox-stable -no-remote -profile "`mktemp -d`" -private-window'
 # Firefox-nightly Test (clean environment)
 alias ft='firefox-nightly -no-remote -profile "`mktemp -d`" -private-window'
 
+# Let fuck-you use 'fuck'
+# https://www.npmjs.com/package/fuck-you
+# and thefuck use another alias
+# https://github.com/nvbn/thefuck
+alias fuck="npx fuck"
+
 # Colorize grep output
 alias grep="grep --color=auto"
 
@@ -88,10 +94,6 @@ alias lock="mate-screensaver-command --lock"
 # Enhanced file listing
 alias ls="ls --color=auto"
 alias ll="ls -lAh --time-style long-iso --color=auto"
-
-# https://github.com/nvbn/thefuck
-# NOTE: Keep the single quotes.
-alias merde='eval $(thefuck $(fc -ln -1))'
 
 # Add local node modules binaries to $PATH
 # NOTE: Keep the single quotes.
