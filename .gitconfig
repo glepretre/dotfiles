@@ -4,6 +4,7 @@
 [color]
   ui = true
 [core]
+  editor = vi
   excludesfile = ~/.gitignore_global
   attributesfile = ~/.gitattributes
 [alias]
@@ -46,8 +47,6 @@
   default = simple
 [init]
   templatedir = /home/gilles/.git-templates
-[gpg]
-  program = gpg2
 [commit]
   gpgSign = true
 [credential]
