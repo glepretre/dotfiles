@@ -26,6 +26,7 @@
       "csslint"
       "atom-ternjs"
       "prettier-atom"
+      "mjml-preview"
     ]
     telemetryConsent: "limited"
     useTreeSitterParsers: false
@@ -65,6 +66,7 @@
     statusBarRepresents: "Current File"
   "markdown-preview":
     useGitHubStyle: true
+  "mjml-preview": {}
   pigments:
     supportedFiletypes: [
       ".md"
