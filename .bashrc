@@ -171,16 +171,6 @@ groot () {
   cd "$(git rev-parse --show-toplevel)" || exit
 }
 
-# Enable unzip and zipinfo autocomplete for .lim and .bor files
-# https://unix.stackexchange.com/a/108646/229657
-complete -f -X '!*.@(zip|lim|bor)' unzip
-complete -f -X '!*.@(zip|lim|bor)' zipinfo
-
-lint() {
-  jscs "$@"
-  jshint "$@"
-}
-
 # Original idea:
 # https://github.com/kepkin/dev-shell-essentials/blob/45da0e2a8da961a146e72cba7fc63da589d89a05/highlight.sh
 # Enhanced
