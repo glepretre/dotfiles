@@ -1,0 +1,6 @@
+# Override git user.email in personal GitHub projects
+# Paste it on top of .git/config in these projects
+
+[user]
+  email = glepret.pro@gmail.com
+  name = Gilles Lepretre
