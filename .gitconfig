@@ -28,10 +28,12 @@
   dr = !ANCESTOR=$(git merge-base HEAD origin/master) && git icdiff $ANCESTOR..HEAD
   drs = !ANCESTOR=$(git merge-base HEAD origin/master) && git diff --stat $ANCESTOR..HEAD
   ds = diff --stat
+  dsc = diff --stat --cached
   fa = !git fetch && git fetch --tags
   last = !git fa && git log --all -n 1 --pretty=format:%H
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   pr = push-review
+  root = rev-parse --show-toplevel
   rph = rev-parse HEAD
   rpm = rev-parse master
   sa = !git stash apply && git diff --full-index --binary > .latest-stash

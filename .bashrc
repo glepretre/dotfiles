@@ -165,6 +165,12 @@ mkcd () {
   cd "$1"
 }
 
+# I am groot:
+# Go to git toplevel directory
+groot () {
+  cd "$(git rev-parse --show-toplevel)" || exit
+}
+
 # Enable unzip and zipinfo autocomplete for .lim and .bor files
 # https://unix.stackexchange.com/a/108646/229657
 complete -f -X '!*.@(zip|lim|bor)' unzip

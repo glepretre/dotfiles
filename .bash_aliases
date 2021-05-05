@@ -15,8 +15,18 @@ alias aliases="compgen -a"
 # Navigation
 alias ..="cd .."
 alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ......="cd ../../../../.."
+alias .......="cd ../../../../../.."
+alias ........="cd ../../../../../../.."
+alias .........="cd ../../../../../../../.."
+alias ..........="cd ../../../../../../../../.."
 
 # Command line calculator
+# alternatives:
+#   - bc -l
+#   - js (node)
 alias calc="qalc"
 
 # Clear terminal with 1 char
@@ -95,6 +105,12 @@ alias lock="mate-screensaver-command --lock"
 alias ls="ls --color=auto"
 alias ll="ls -lAh --time-style long-iso --color=auto"
 
+# Pretty print mounted volumes
+alias mounted="mount | grep -E ^/dev | column -t"
+
+# https://zim-wiki.org/
+alias notes="zim"
+
 # Add local node modules binaries to $PATH
 # NOTE: Keep the single quotes.
 alias npm-path='PATH=$(npm bin):$PATH'
@@ -104,6 +120,9 @@ alias paths="echo $PATH | tr -s ':' '\n'"
 
 # Convert pdf to images to print them easily
 alias pdf2image="convert -verbose -density 300 -quality 100 $1 $2"
+
+# print used ports
+alias ports="sudo netstat -nltpe"
 
 # Reset terminal with 1 char
 alias r="reset"
