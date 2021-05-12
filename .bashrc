@@ -18,6 +18,11 @@ esac
 # Source Debian default bash_completion init script
 source_if_exists /etc/bash_completion
 
+# Set vi as default editor
+# might also need: sudo update-alternatives --config editor
+# See: https://unix.stackexchange.com/q/73484
+export EDITOR=vi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 # HISTCONTROL=ignoreboth
