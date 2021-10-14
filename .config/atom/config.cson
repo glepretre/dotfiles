@@ -19,6 +19,7 @@
       "symbols-view"
       "angularjs"
       "language-babel"
+      "atom-ternjs"
     ]
     packagesWithKeymapsDisabled: [
       "refactor"
