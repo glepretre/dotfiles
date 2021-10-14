@@ -15,6 +15,7 @@
   author-lines = !git ls-tree -r -z --name-only HEAD | xargs -0 -n1 git blame --line-porcelain HEAD | grep '^author ' | sort | uniq -c | sort -nr | sed 's/author //'
   ca = commit --amend
   caf = commit --amend --no-edit
+  cav = commit --amend --verbose
   cb = checkout -b
   cm = commit -m
   co = checkout
