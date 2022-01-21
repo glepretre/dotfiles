@@ -4,3 +4,14 @@
 [user]
   email = glepret.pro@gmail.com
   name = Gilles Lepretre
+
+[remote "origin"]
+  # Must be https not ssh (git@github.com:...)
+  url = https://github.com/glepretre/REPOSITORY.git
+  fetch = +refs/heads/*:refs/remotes/origin/*
+
+#
+# Or use this command to push
+# GIT_SSH_COMMAND="ssh -i /home/gilles/.ssh/GITHUB_SSH_KEY" git push
+# then use token
+#
