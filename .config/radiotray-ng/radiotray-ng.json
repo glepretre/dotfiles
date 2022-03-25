@@ -1,0 +1,7 @@
+{
+  "bookmarks": "/home/gilles/.config/radiotray-ng/bookmarks.json",
+  "notification-verbose": true,
+  "notifications": true,
+  "split-title": true,
+  "volume-level": 100
+}

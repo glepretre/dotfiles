@@ -1,0 +1,31 @@
+[
+  {
+    "group": "root",
+    "stations": [
+      {
+        "name": "franceinfo",
+        "url": "http://direct.franceinfo.fr/live/franceinfo-midfi.mp3"
+      },
+      {
+        "name": "france inter",
+        "url": "http://direct.franceinter.fr/live/franceinter-midfi.mp3"
+      },
+      {
+        "name": "NRJ",
+        "url": "http://cdn.nrjaudio.fm/audio1/fr/30001/mp3_128.mp3"
+      },
+      {
+        "name": "RMC",
+        "url": "http://rmc.bfmtv.com/rmcinfo-mp3"
+      },
+      {
+        "name": "Virgin",
+        "url": "http://vr-live-mp3-128.scdn.arkena.com/virginradio.mp3"
+      },
+      {
+        "name": "BFM Business",
+        "url": "http://chai5she.cdn.dvmr.fr/bfmbusiness"
+      }
+    ]
+  }
+]
