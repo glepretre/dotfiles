@@ -1,5 +1,9 @@
 # Open atom in current folder with 1 char
-alias a="atom ."
+# FIXME: --in-process-gpu flag due to atom/electron
+# issue with glibc: https://github.com/atom/atom/issues/23036
+# occuring also on fresh UbuntuMATE 22.04
+# . (dot) must be before to open current directory as project
+alias a="atom . --in-process-gpu"
 
 # Make ack case-insensitive
 # and ignore error messages by default
