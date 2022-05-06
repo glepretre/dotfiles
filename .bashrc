@@ -6,6 +6,10 @@ source_if_exists() {
   [ -f "$1" ] && source "$1"
 }
 
+is_user_root() {
+  [ "$EUID" = 0 ]
+}
+
 # Source global definitions
 source_if_exists /etc/bash.bashrc
 
