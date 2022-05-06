@@ -161,9 +161,13 @@ export NVM_DIR="$HOME/.nvm"
 source_if_exists "$NVM_DIR/bash_completion"
 
 #pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+if is_user_root ;
+then :
+else
+  export PYENV_ROOT="$HOME/.pyenv"
+  command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 
 # Android emulator
 PATH="/mnt/HDD/android/tools:$PATH"
