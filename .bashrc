@@ -2,6 +2,12 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# https://stackoverflow.com/a/34143401
+exists()
+{
+  command -v "$1" >/dev/null 2>&1
+}
+
 source_if_exists() {
   [ -f "$1" ] && source "$1"
 }
