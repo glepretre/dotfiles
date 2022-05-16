@@ -96,12 +96,11 @@ source_if_exists ~/tools/bash-git-prompt/gitprompt.sh && GIT_PROMPT_ONLY_IN_REPO
 # like: https://www.npmjs.com/package/which
 # or https://www.npmjs.com/package/watch
 PATH="${PATH}:${HOME}/node_modules/.bin"
+
 # rbenv
 PATH="${HOME}/.rbenv/bin:${PATH}"
 # Init rbenv when available
-if hash rbenv 2>/dev/null; then
-  eval "$(rbenv init -)"
-fi
+exists rbenv && eval "$(rbenv init -)"
 #rbenv shell 1.9.3-p448
 
 # /sbin scripts
