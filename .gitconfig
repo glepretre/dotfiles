@@ -41,8 +41,9 @@
   sa = !git stash apply && git diff --full-index --binary > .latest-stash
   save = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git -c commit.gpgSign=false stash save -u wip-$CURRENT_BRANCH
   sd = stash drop
+  sh = icdiff HEAD^..HEAD
+  show-icdiff = !git sh
   sm = !git submodule init && git submodule sync && git submodule update --init --recursive --force
-  show-icdiff = !git icdiff "$1"^.."$1"
   ss = stash show -p
   st = status
   su = !git apply -R .latest-stash && rm .latest-stash
