@@ -111,6 +111,9 @@ alias lock="mate-screensaver-command --lock"
 alias ls="ls --color=auto"
 alias ll="ls -lAh --time-style long-iso --color=auto"
 
+# Quickly create a meme
+alias meme="cs https://imgflip.com/memegenerator"
+
 # Pretty print mounted volumes
 alias mounted="mount | grep -E ^/dev | column -t"
 
