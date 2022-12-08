@@ -50,8 +50,6 @@
   up = !LAST=$(git last) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f3-) && git checkout $BRANCH
 [push]
   default = simple
-[init]
-  templatedir = /home/gilles/.git-templates
 [commit]
   gpgSign = true
 [credential]
