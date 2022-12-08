@@ -50,6 +50,8 @@
   up = !LAST=$(git last) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f3-) && git checkout $BRANCH
 [push]
   default = simple
+[init]
+  defaultBranch = main
 [commit]
   gpgSign = true
 [credential]
