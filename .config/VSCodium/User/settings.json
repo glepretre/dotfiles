@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "editor.scrollBeyondLastLine": false,
+    "gitblame.ignoreWhitespace": true,
+    "gitblame.inlineMessageEnabled": true,
+    "gitblame.inlineMessageFormat": "${commit.hash_short} ${author.name} (${time.ago})",
+    "gitblame.statusBarMessageClickAction": "Open tool URL",
+    "gitblame.statusBarMessageFormat": "${commit.hash_short} ${author.name} (${time.ago})"
+}
