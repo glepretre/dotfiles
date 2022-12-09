@@ -1,9 +1,5 @@
-# Open atom in current folder with 1 char
-# FIXME: --in-process-gpu flag due to atom/electron
-# issue with glibc: https://github.com/atom/atom/issues/23036
-# occuring also on fresh UbuntuMATE 22.04
-# . (dot) must be before to open current directory as project
-alias a="atom . --in-process-gpu"
+# codium is the new atom
+alias a="codium ."
 
 # Make ack case-insensitive
 # and ignore error messages by default
@@ -33,8 +29,11 @@ alias ..........="cd ../../../../../../../../.."
 #   - js (node)
 alias calc="qalc"
 
-# Clear terminal with 1 char
-alias c="clear"
+# Open codium with 1 char
+alias c="codium ."
+
+# Clear terminal with 2 chars
+alias cl="clear"
 
 # Count characters in a string
 alias count="expr length"
