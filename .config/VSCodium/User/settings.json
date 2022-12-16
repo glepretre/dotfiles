@@ -1,4 +1,6 @@
 {
+  "editor.formatOnPaste": true,
+  "editor.multiCursorModifier": "ctrlCmd",
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
   "gitlens.hovers.currentLine.details": false,
