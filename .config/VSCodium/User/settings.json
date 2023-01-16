@@ -5,5 +5,15 @@
   "files.insertFinalNewline": true,
   "gitlens.hovers.currentLine.details": false,
   "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
-  "workbench.colorTheme": "Default Dark+"
+  "workbench.colorTheme": "Default Dark+",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.autoUpdate": "onlyEnabledExtensions",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
