@@ -5,6 +5,8 @@
   "files.insertFinalNewline": true,
   "gitlens.hovers.currentLine.details": false,
   "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
+  "gitlens.codeLens.authors.enabled": false,
+  "gitlens.codeLens.enabled": false,
   "workbench.colorTheme": "Default Dark+",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -26,6 +28,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
