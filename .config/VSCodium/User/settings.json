@@ -3,6 +3,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
   "gitlens.hovers.currentLine.details": false,
   "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
   "gitlens.codeLens.authors.enabled": false,
