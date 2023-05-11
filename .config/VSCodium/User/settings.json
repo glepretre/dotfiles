@@ -8,7 +8,6 @@
   "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
-  "workbench.colorTheme": "Default Dark+",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
