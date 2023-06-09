@@ -35,5 +35,9 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.startupEditor": "none",
+  "[python]": {
+    "editor.defaultFormatter": "mikoz.black-py"
   }
 }
