@@ -18,6 +18,7 @@
   cav = commit --amend --verbose
   cb = checkout -b
   cm = commit -m
+  cmn = commit --no-verify -m
   co = checkout
   count = rev-list --count
   cv = commit -v
