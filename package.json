@@ -13,8 +13,7 @@
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.0.5",
-    "svgexport": "^0.4.1",
-    "swagger-cli": "2.3.5"
+    "svgexport": "^0.4.1"
   },
   "devDependencies": {
     "emoj": "^3.1.0",
