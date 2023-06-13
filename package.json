@@ -8,7 +8,6 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
-    "bower": "1.8.14",
     "eslint": "^8.29.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-prettier": "^4.2.1",
