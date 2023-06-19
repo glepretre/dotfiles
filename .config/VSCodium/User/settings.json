@@ -9,6 +9,7 @@
   "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "sass.disableAutoIndent": true,
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
