@@ -9,7 +9,10 @@
   "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": true,
   "sass.disableAutoIndent": true,
+  "search.useIgnoreFiles": true,
+  "search.useParentIgnoreFiles": true,
   "workbench.startupEditor": "none",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
