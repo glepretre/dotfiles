@@ -10,6 +10,7 @@
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
   "sass.disableAutoIndent": true,
+  "workbench.startupEditor": "none",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -38,7 +39,6 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.startupEditor": "none",
   "[python]": {
     "editor.defaultFormatter": "mikoz.black-py"
   }
