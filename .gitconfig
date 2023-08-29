@@ -48,6 +48,7 @@
   ss = stash show -p
   st = status
   su = !git apply -R .latest-stash && rm .latest-stash
+  undo = reset --soft HEAD^
   up = !LAST=$(git last) && BRANCH=$(git name-rev --name-only $LAST | cut -d '/' -f3-) && git checkout $BRANCH
 [push]
   default = simple
