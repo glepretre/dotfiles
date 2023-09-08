@@ -8,10 +8,10 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
-    "eslint": "^8.46.0",
+    "eslint": "^8.48.0",
     "eslint-plugin-html": "^7.1.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "prettier": "^3.0.1",
+    "prettier": "^3.0.3",
     "svgexport": "^0.4.2"
   },
   "devDependencies": {
@@ -25,7 +25,7 @@
     "http-status-identifier-cli": "^1.1.6",
     "idea": "2.0.11",
     "jsonlint-cli": "1.0.1",
-    "nativefier": "^51.0.1",
+    "nativefier": "^52.0.0",
     "npms-cli": "1.6.0",
     "package-json-validator": "0.6.3",
     "pomo": "1.1.1",
