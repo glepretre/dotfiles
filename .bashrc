@@ -252,6 +252,10 @@ function color() {
   sed -u s"/$1/$fg_c\\0$c_rs/g" <<< "$INPUT"
 }
 
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
 # Private
 source_if_exists ${HOME}/.bashrc_private
 
