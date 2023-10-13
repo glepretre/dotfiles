@@ -9,7 +9,7 @@
   "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
-  "markdown.editor.pasteUrlAsFormattedLink.enabled": true,
+  "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
   "sass.disableAutoIndent": true,
   "search.useIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
