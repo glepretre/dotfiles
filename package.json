@@ -29,7 +29,7 @@
     "npms-cli": "1.6.0",
     "package-json-validator": "0.6.3",
     "pomo": "1.1.1",
-    "sloc": "0.2.1",
+    "sloc": "^0.3.0",
     "stopwatch-cli": "1.0.0",
     "tldr": "3.3.8",
     "tzloc": "1.5.2",
