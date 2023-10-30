@@ -15,7 +15,7 @@
     "svgexport": "^0.4.2"
   },
   "devDependencies": {
-    "emoj": "^3.3.0",
+    "emoj": "^4.0.1",
     "fuck-you": "1.3.0",
     "ghcal": "2.3.12",
     "git-standup": "2.3.2",
