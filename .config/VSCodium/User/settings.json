@@ -16,6 +16,7 @@
   "sass.disableAutoIndent": true,
   "search.useIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
   "workbench.startupEditor": "none",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
