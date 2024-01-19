@@ -23,9 +23,9 @@
   count = rev-list --count
   cv = commit -v
   cp = cherry-pick
-  dc = icdiff --cached
-  df = icdiff
-  dm = icdiff master
+  dc = difftool --cached
+  df = difftool -p
+  dm = difftool master
   dms = diff master --stat
   dr = !ANCESTOR=$(git merge-base HEAD origin/master) && git icdiff $ANCESTOR..HEAD
   drs = !ANCESTOR=$(git merge-base HEAD origin/master) && git diff --stat $ANCESTOR..HEAD
@@ -42,8 +42,8 @@
   sa = !git stash apply && git diff --full-index --binary > .latest-stash
   save = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git -c commit.gpgSign=false stash save -u wip-$CURRENT_BRANCH
   sd = stash drop
-  sh = icdiff HEAD^..HEAD
-  show-icdiff = !git sh
+  sh = !GIT_EXTERNAL_DIFF=difft git show HEAD --ext-diff
+  show-icdiff = !git icdiff HEAD^..HEAD
   sm = !git submodule init && git submodule sync && git submodule update --init --recursive --force
   ss = stash show -p
   st = status
@@ -74,3 +74,11 @@
 [pull]
   ff = only
   rebase = true
+[diff]
+  tool = difftastic
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+  difftool = true
