@@ -35,7 +35,7 @@
   fap = !git fetch --prune && git fetch --tags
   last = !git fa && git log --all -n 1 --pretty=format:%H
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  pr = push-review
+  pr = pull --rebase
   root = rev-parse --show-toplevel
   rph = rev-parse HEAD
   rpm = rev-parse master
