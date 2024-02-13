@@ -1,4 +1,40 @@
 {
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "[python]": {
+    "editor.defaultFormatter": "mikoz.black-py"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "editor.detectIndentation": false,
   "editor.formatOnPaste": true,
   "editor.insertSpaces": true,
@@ -6,55 +42,16 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
+  "extensions.autoUpdate": "onlyEnabledExtensions",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
-  "gitlens.hovers.currentLine.details": false,
-  "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.currentLine.details": false,
+  "gitlens.statusBar.command": "gitlens.openCommitOnRemote",
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
-  "sass.disableAutoIndent": true,
-  "search.useIgnoreFiles": true,
-  "search.useParentIgnoreFiles": true,
-  "terminal.integrated.persistentSessionReviveProcess": "never",
-  "workbench.startupEditor": "none",
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.defaultFormatter": "mikoz.black-py"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[markdown]": {
-    "files.trimTrailingWhitespace": false
-  },
+  "peacock.affectEditorGroupBorder": true,
+  "peacock.affectStatusAndTitleBorders": true,
   "peacock.favoriteColors": [
     {
       "name": "Angular Red",
@@ -93,9 +90,10 @@
       "value": "#42b883"
     }
   ],
-  "peacock.affectEditorGroupBorder": true,
-  "peacock.affectStatusAndTitleBorders": true,
   "peacock.showColorInStatusBar": false,
+  "sass.disableAutoIndent": true,
+  "search.useIgnoreFiles": true,
+  "search.useParentIgnoreFiles": true,
   "sortJSON.contextMenu": {
     "sortJSON": true,
     "sortJSONAlphaNum": true,
@@ -107,5 +105,7 @@
     "sortJSONTypeReverse": false,
     "sortJSONValues": false,
     "sortJSONValuesReverse": false
-  }
+  },
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "workbench.startupEditor": "none"
 }
