@@ -44,6 +44,7 @@
   sd = "!f(){ echo \"Drop stash? (y/N)\"; read answer; if [ \"$answer\" = \"y\" ]; then git stash drop \"$@\"; else echo \"Stash drop aborted\"; fi; }; f"
   sh = !GIT_EXTERNAL_DIFF=difft git show HEAD --ext-diff
   show-icdiff = !git icdiff HEAD^..HEAD
+  sk = stash -k
   sm = !git submodule init && git submodule sync && git submodule update --init --recursive --force
   ss = stash show -p
   st = status
