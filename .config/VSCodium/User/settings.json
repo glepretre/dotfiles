@@ -95,5 +95,17 @@
   ],
   "peacock.affectEditorGroupBorder": true,
   "peacock.affectStatusAndTitleBorders": true,
-  "peacock.showColorInStatusBar": false
+  "peacock.showColorInStatusBar": false,
+  "sortJSON.contextMenu": {
+    "sortJSON": true,
+    "sortJSONAlphaNum": true,
+    "sortJSONAlphaNumReverse": false,
+    "sortJSONKeyLength": false,
+    "sortJSONKeyLengthReverse": false,
+    "sortJSONReverse": false,
+    "sortJSONType": false,
+    "sortJSONTypeReverse": false,
+    "sortJSONValues": false,
+    "sortJSONValuesReverse": false
+  }
 }
