@@ -21,8 +21,8 @@
   cmn = commit --no-verify -m
   co = checkout
   count = rev-list --count
-  cv = commit -v
   cp = cherry-pick
+  cv = commit -v
   dc = difftool --cached
   df = difftool -p
   dm = difftool master
