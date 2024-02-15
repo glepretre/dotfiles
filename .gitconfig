@@ -23,6 +23,7 @@
   count = rev-list --count
   cp = cherry-pick
   cv = commit -v
+  cvn = commit -v --no-verify
   dc = difftool --cached
   df = difftool -p
   dm = difftool master
