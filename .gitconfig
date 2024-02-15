@@ -39,6 +39,7 @@
   pr = pull --rebase
   puf = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git push -u origin $CURRENT_BRANCH
   rbi = rebase -i
+  restash = stash store
   root = rev-parse --show-toplevel
   rph = rev-parse HEAD
   rpm = rev-parse master
