@@ -44,7 +44,7 @@
   rph = rev-parse HEAD
   rpm = rev-parse master
   sa = !git stash apply && git diff --full-index --binary > .latest-stash
-  save = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git -c commit.gpgSign=false stash save -u wip-$CURRENT_BRANCH
+  save = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git stash push -u -m wip-$CURRENT_BRANCH
   sd = "!f(){ echo \"Drop stash? (y/N)\"; read answer; if [ \"$answer\" = \"y\" ]; then git stash drop \"$@\"; else echo \"Stash drop aborted\"; fi; }; f"
   sh = !GIT_EXTERNAL_DIFF=difft git show HEAD --ext-diff
   show-icdiff = !git icdiff HEAD^..HEAD
