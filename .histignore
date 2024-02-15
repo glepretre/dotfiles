@@ -1,7 +1,6 @@
 * git checkout .*
 * git co .*
 * git reset*
-* git sd*
 * git stash drop *
 * git stash pop *
 * git su*
@@ -13,7 +12,6 @@
 git checkout .*
 git co .*
 git reset*
-git sd*
 git stash drop*
 git stash pop*
 git su*
