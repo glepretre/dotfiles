@@ -45,6 +45,7 @@
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
+  "git.openRepositoryInParentFolders": "always",
   "gitblame.ignoreWhitespace": true,
   "gitblame.inlineMessageEnabled": true,
   "gitblame.inlineMessageFormat": "${commit.summary} - ${author.name} (${time.ago})",
