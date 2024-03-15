@@ -42,6 +42,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "files.insertFinalNewline": true,
   "files.trimTrailingWhitespace": true,
