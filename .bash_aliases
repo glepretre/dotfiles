@@ -125,6 +125,12 @@ alias notes="zim"
 # NOTE: Keep the single quotes.
 alias npm-path='PATH=$(npm bin):$PATH'
 
+# Neovim aliases
+# https://www.reddit.com/r/neovim/comments/13s7pvr/comment/jlqs2f7/
+# https://neovim.io/doc/user/starting.html#%24NVIM_APPNAME
+alias nvchad="NVIM_APPNAME=nvchad nvim"
+alias lazyvim="NVIM_APPNAME=lazyvim nvim"
+
 # Echo paths nicely
 alias paths="echo $PATH | tr -s ':' '\n'"
 
