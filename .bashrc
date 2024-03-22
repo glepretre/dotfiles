@@ -254,6 +254,9 @@ function color() {
   sed -u s"/$1/$fg_c\\0$c_rs/g" <<< "$INPUT"
 }
 
+# nix - https://nixos.org/
+source_if_exists .nix-profile/etc/profile.d/nix.sh
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
