@@ -257,6 +257,9 @@ function color() {
 # nix - https://nixos.org/
 source_if_exists .nix-profile/etc/profile.d/nix.sh
 
+# direnv - https://direnv.net/
+eval "$(direnv hook bash)"
+
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
