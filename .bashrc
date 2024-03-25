@@ -255,7 +255,7 @@ function color() {
 }
 
 # nix - https://nixos.org/
-source_if_exists .nix-profile/etc/profile.d/nix.sh
+source_if_exists ${HOME}/.nix-profile/etc/profile.d/nix.sh
 
 # direnv - https://direnv.net/
 eval "$(direnv hook bash)"
