@@ -152,7 +152,7 @@ if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
 
 # thefuck
 # https://github.com/nvbn/thefuck
-eval "$(thefuck --alias merde)"
+exists thefuck && eval "$(thefuck --alias merde)"
 
 export GOPATH="/home/gilles/.go"
 # go binaries
