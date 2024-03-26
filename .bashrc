@@ -258,7 +258,7 @@ function color() {
 source_if_exists ${HOME}/.nix-profile/etc/profile.d/nix.sh
 
 # direnv - https://direnv.net/
-eval "$(direnv hook bash)"
+exists direnv && eval "$(direnv hook bash)"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
