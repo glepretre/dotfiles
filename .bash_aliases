@@ -147,6 +147,9 @@ alias r="reset"
 # https://github.com/trehn/termdown
 alias scrum="termdown 5m"
 
+# Record faster
+alias ssr=simplescreenrecorder
+
 # Always color tree output
 alias tree="tree -C"
 
