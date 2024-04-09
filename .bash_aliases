@@ -143,6 +143,10 @@ alias ports="sudo netstat -nltpe"
 # Reset terminal with 1 char
 alias r="reset"
 
+# Print package.json commands
+# https://frontendmasters.com/blog/a-quick-command-to-see-the-available-scripts/
+alias scripts="cat package.json | jq --color-output '.scripts'"
+
 # Terminal countdown
 # https://github.com/trehn/termdown
 alias scrum="termdown 5m"
