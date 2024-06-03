@@ -111,5 +111,7 @@
     "sortJSONValuesReverse": false
   },
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "powermode.enabled": true,
+  "powermode.shake.enabled": false
 }
