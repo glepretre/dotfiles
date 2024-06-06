@@ -35,7 +35,9 @@ alias c="codium ."
 # Clear terminal with 2 chars
 alias cl="clear"
 
+# Copy/Paste from terminal
 alias copy="xclip -selection clipboard"
+alias paste="xclip -o -selection clipboard"
 
 # Count characters in a string
 alias count="expr length"
