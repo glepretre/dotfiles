@@ -113,5 +113,6 @@
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "workbench.startupEditor": "none",
   "powermode.enabled": true,
-  "powermode.shake.enabled": false
+  "powermode.shake.enabled": false,
+  "powermode.combo.location": "statusbar"
 }
