@@ -48,6 +48,7 @@ alias cs="google-chrome-stable \
           --no-default-browser-check \
           --no-first-run \
           --disable-default-apps \
+          --disable-search-engine-choice-screen \
           --user-data-dir=`mktemp -d`"
 
 # Chrome-dev Test (clean environment)
@@ -56,6 +57,7 @@ alias ct="google-chrome-unstable \
           --no-default-browser-check \
           --no-first-run \
           --disable-default-apps \
+          --disable-search-engine-choice-screen \
           --user-data-dir=`mktemp -d`"
 
 # Print directories size
