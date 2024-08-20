@@ -40,6 +40,9 @@
   "editor.insertSpaces": true,
   "editor.linkedEditing": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.rulers": [
+    80
+  ],
   "editor.scrollBeyondLastLine": false,
   "editor.tabSize": 2,
   "explorer.confirmDelete": false,
