@@ -8,14 +8,14 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
-    "eslint": "^8.52.0",
+    "eslint": "^8.57.0",
     "eslint-plugin-html": "^7.1.0",
-    "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.3",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3",
     "svgexport": "^0.4.2"
   },
   "devDependencies": {
-    "emoj": "^4.0.1",
+    "emoj": "^4.1.0",
     "fuck-you": "1.3.0",
     "ghcal": "2.3.12",
     "git-standup": "2.3.2",
@@ -29,10 +29,10 @@
     "npms-cli": "1.6.0",
     "package-json-validator": "0.6.3",
     "pomo": "1.1.1",
-    "sloc": "^0.3.0",
+    "sloc": "^0.3.2",
     "stopwatch-cli": "1.0.0",
     "tldr": "3.3.8",
     "tzloc": "1.5.2",
-    "yarn": "^1.22.19"
+    "yarn": "^1.22.22"
   }
 }
