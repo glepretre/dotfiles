@@ -37,6 +37,7 @@
   last = !git fa && git log --all -n 1 --pretty=format:%H
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   pr = pull --rebase
+  pt = push --tags
   pu = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git push -u origin $CURRENT_BRANCH
   rbi = rebase -i
   restash = stash store
