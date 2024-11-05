@@ -99,6 +99,9 @@
     }
   ],
   "peacock.showColorInStatusBar": false,
+  "powermode.combo.location": "statusbar",
+  "powermode.enabled": true,
+  "powermode.shake.enabled": false,
   "sass.disableAutoIndent": true,
   "search.useIgnoreFiles": true,
   "search.useParentIgnoreFiles": true,
@@ -115,8 +118,5 @@
     "sortJSONValuesReverse": false
   },
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "workbench.startupEditor": "none",
-  "powermode.enabled": true,
-  "powermode.shake.enabled": false,
-  "powermode.combo.location": "statusbar"
+  "workbench.startupEditor": "none"
 }
