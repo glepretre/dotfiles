@@ -40,6 +40,7 @@
   "editor.insertSpaces": true,
   "editor.linkedEditing": true,
   "editor.multiCursorModifier": "ctrlCmd",
+  "editor.renderWhitespace": "all",
   "editor.rulers": [
     80
   ],
