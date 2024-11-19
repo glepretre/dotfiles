@@ -49,6 +49,7 @@
   "explorer.confirmDelete": false,
   "extensions.autoUpdate": "onlyEnabledExtensions",
   "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.mergeEditor": false,
   "git.openRepositoryInParentFolders": "always",
