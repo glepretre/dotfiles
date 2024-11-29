@@ -91,7 +91,10 @@ esac
 # When running cd (current directory command) onto a git directory
 # show git status in bash
 # From: https://github.com/magicmonty/bash-git-prompt.git
-source_if_exists ~/tools/bash-git-prompt/gitprompt.sh && GIT_PROMPT_ONLY_IN_REPO=1
+# ---
+# Set config variables first
+GIT_PROMPT_ONLY_IN_REPO=1
+source_if_exists ~/tools/bash-git-prompt/gitprompt.sh
 
 # NPM modules binaries
 # Keep it written in this order, not to override linux built-in with node one's
