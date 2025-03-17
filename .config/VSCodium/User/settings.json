@@ -116,5 +116,8 @@
     "sortJSONValuesReverse": false
   },
   "terminal.integrated.persistentSessionReviveProcess": "never",
+  "workbench.editorAssociations": {
+    "*.svg": "default"
+  },
   "workbench.startupEditor": "none"
 }
