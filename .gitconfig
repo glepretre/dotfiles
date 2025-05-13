@@ -9,6 +9,7 @@
   attributesfile = ~/.gitattributes
 [alias]
   aa = add --all
+  af = "!f(){ git status -s | awk '{print $2}' | grep -i \"$1\" | xargs -r git add --; }; f"
   aliases = config --get-regexp alias
   ap = add --all --patch
   author-commits = shortlog -s -n -e
