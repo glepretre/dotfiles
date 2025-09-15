@@ -10,5 +10,6 @@
 .~lock.*
 *~
 .lint
+.vscode
 bower_components
 node_modules
