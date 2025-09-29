@@ -8,14 +8,14 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
-    "eslint": "^9.34.0",
+    "eslint": "^9.36.0",
     "eslint-plugin-html": "^8.1.3",
     "eslint-plugin-prettier": "^5.5.4",
     "prettier": "^3.6.2",
     "svgexport": "^0.4.2"
   },
   "devDependencies": {
-    "emoj": "^4.1.0",
+    "emoj": "^4.2.0",
     "fuck-you": "^1.3.0",
     "ghcal": "^2.3.13",
     "git-standup": "^2.3.2",
@@ -27,7 +27,7 @@
     "jsonlint-cli": "^1.0.1",
     "nativefier": "^52.0.0",
     "npms-cli": "^1.6.0",
-    "package-json-validator-cli": "^0.1.0",
+    "package-json-validator-cli": "^0.1.1",
     "pomo": "^1.1.1",
     "sloc": "^0.3.2",
     "stopwatch-cli": "^1.0.0",
