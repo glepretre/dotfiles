@@ -185,7 +185,7 @@ recently_modified_files() {
 }
 
 mkcd () {
-  mkdir "$1"
+  mkdir -p "$1"
   cd "$1"
 }
 
