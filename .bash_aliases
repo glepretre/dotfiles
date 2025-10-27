@@ -144,6 +144,9 @@ alias pdf2image="convert -verbose -density 300 -quality 100 $1 $2"
 # print used ports
 alias ports="sudo netstat -nltpe"
 
+# personal store
+alias ppass="PASSWORD_STORE_DIR=~/github/store pass"
+
 # Reset terminal with 1 char
 alias r="reset"
 
