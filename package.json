@@ -27,7 +27,7 @@
     "jsonlint-cli": "^1.0.1",
     "nativefier": "^52.0.0",
     "npms-cli": "^1.6.0",
-    "package-json-validator-cli": "^0.1.1",
+    "package-json-validator-cli": "^0.1.9",
     "pomo": "^1.1.1",
     "sloc": "^0.3.2",
     "stopwatch-cli": "^1.0.0",
