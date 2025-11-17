@@ -43,6 +43,7 @@
   pu = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git push -u origin $CURRENT_BRANCH
   rbi = rebase -i
   restash = stash store
+  rho="!b=$(git rev-parse --abbrev-ref HEAD); echo \"Reset HARD to origin/$b? (y/N)\"; read a; [ \"$a\" = \"y\" ] && git reset --hard origin/$b || echo \"Reset aborted\""
   root = rev-parse --show-toplevel
   rph = rev-parse HEAD
   rpm = rev-parse master
