@@ -116,6 +116,9 @@ alias lock="mate-screensaver-command --lock"
 alias ls="ls --color=auto"
 alias ll="ls -lAh --time-style long-iso --color=auto"
 
+# Print top 20 apps by memory usage
+alias mem='ps -e -o comm=,rss= | awk '\''{rss[$1]+=$2} END {for (p in rss) printf "%8.1f MB  %s\n", rss[p]/1024, p}'\'' | sort -nr | head -n 20'
+
 # Quickly create a meme
 alias meme="cs https://imgflip.com/memegenerator"
 
