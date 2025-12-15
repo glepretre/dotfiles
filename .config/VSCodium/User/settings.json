@@ -20,9 +20,6 @@
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
-  "[python]": {
-    "editor.defaultFormatter": "mikoz.black-py"
-  },
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
