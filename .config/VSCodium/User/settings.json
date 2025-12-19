@@ -113,6 +113,9 @@
     "sortJSONValuesReverse": false
   },
   "terminal.integrated.persistentSessionReviveProcess": "never",
+  "workbench.colorCustomizations": {
+    "git.blame.editorDecorationForeground": "#6b6b6b"
+  },
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
