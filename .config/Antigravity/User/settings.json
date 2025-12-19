@@ -34,6 +34,8 @@
   },
   "editor.detectIndentation": false,
   "editor.formatOnPaste": true,
+  "editor.formatOnSave": false,
+  "editor.formatOnSaveMode": "modifications",
   "editor.insertSpaces": true,
   "editor.linkedEditing": true,
   "editor.multiCursorModifier": "ctrlCmd",
