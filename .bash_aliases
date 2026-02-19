@@ -76,7 +76,7 @@ alias e="xdg-open ./"
 alias explore="xdg-open ./"
 
 # Print current folder size
-alias fat="du -ch | grep total"
+alias fat="du -ch | tail -n 1"
 
 #Find files easily
 alias ff='sh -c '\''find . -iname *"$1"* | grep --color --ignore-case "$1"'\'' -'
