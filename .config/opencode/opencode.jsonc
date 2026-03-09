@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "openrouter/google/gemini-3-flash-preview",
+  "small_model": "openrouter/google/gemini-3-flash-preview",
+  "permission": {
+    "read": {
+      ".envrc": "ask"
+    }
+  }
+}
