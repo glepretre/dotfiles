@@ -41,6 +41,8 @@
   pr = pull --rebase
   pt = push --tags
   pu = !CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD) && git push -u origin $CURRENT_BRANCH
+  rba = rebase --abort
+  rbc = rebase --continue
   rbi = rebase -i
   restash = stash store
   rho="!b=$(git rev-parse --abbrev-ref HEAD); echo \"Reset HARD to origin/$b? (y/N)\"; read a; [ \"$a\" = \"y\" ] && git reset --hard origin/$b || echo \"Reset aborted\""
