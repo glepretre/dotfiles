@@ -5,6 +5,12 @@
   "permission": {
     "read": {
       ".envrc": "ask"
+    },
+    "bash": {
+      "gh *": "ask",
+      "git push": "deny",
+      "git push *": "deny",
+      "rm *": "ask"
     }
   }
 }
