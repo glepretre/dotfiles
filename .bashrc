@@ -263,6 +263,9 @@ source_if_exists ${HOME}/.nix-profile/etc/profile.d/nix.sh
 # direnv - https://direnv.net/
 exists direnv && eval "$(direnv hook bash)"
 
+# Rust
+source_if_exists ${HOME}/.cargo/env
+
 # Private
 source_if_exists ${HOME}/.bashrc_private
 
