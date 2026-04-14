@@ -25,7 +25,6 @@
     "http-status-identifier-cli": "^1.1.6",
     "idea": "^2.1.1",
     "jsonlint-cli": "^1.0.1",
-    "nativefier": "^52.0.0",
     "npms-cli": "^1.6.0",
     "opencode-ai": "^1.4.3",
     "package-json-validator-cli": "^0.1.11",
