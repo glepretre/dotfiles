@@ -54,6 +54,10 @@
   "git.blame.statusBarItem.enabled": true,
   "git.mergeEditor": false,
   "git.openRepositoryInParentFolders": "always",
+  "github.copilot.enable": {
+    "*": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": false,
   "markdown.editor.pasteUrlAsFormattedLink.enabled": "smart",
   "peacock.affectEditorGroupBorder": true,
   "peacock.affectStatusAndTitleBorders": true,
