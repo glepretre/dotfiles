@@ -8,10 +8,10 @@
   "license": "Proprietary",
   "private": true,
   "dependencies": {
-    "eslint": "^10.2.0",
+    "eslint": "^10.3.0",
     "eslint-plugin-html": "^8.1.4",
     "eslint-plugin-prettier": "^5.5.5",
-    "prettier": "^3.8.2",
+    "prettier": "^3.8.3",
     "svgexport": "^0.4.2"
   },
   "devDependencies": {
