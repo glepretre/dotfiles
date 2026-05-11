@@ -7,15 +7,11 @@
   ],
   "license": "Proprietary",
   "private": true,
-  "dependencies": {
+  "devDependencies": {
+    "emoj": "^4.2.0",
     "eslint": "^10.3.0",
     "eslint-plugin-html": "^8.1.4",
     "eslint-plugin-prettier": "^5.5.5",
-    "prettier": "^3.8.3",
-    "svgexport": "^0.4.2"
-  },
-  "devDependencies": {
-    "emoj": "^4.2.0",
     "fuck-you": "^1.3.0",
     "ghcal": "^2.3.13",
     "git-standup": "^2.3.2",
@@ -29,8 +25,10 @@
     "opencode-ai": "^1.14.48",
     "package-json-validator-cli": "^0.1.11",
     "pomo": "^1.1.1",
+    "prettier": "^3.8.3",
     "sloc": "^0.3.2",
     "stopwatch-cli": "^1.0.0",
+    "svgexport": "^0.4.2",
     "tldr": "^3.5.0",
     "tzloc": "^1.5.2",
     "yarn": "^1.22.22"
