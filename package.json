@@ -9,7 +9,7 @@
   "private": true,
   "devDependencies": {
     "emoj": "^4.2.0",
-    "eslint": "^10.3.0",
+    "eslint": "^10.4.0",
     "eslint-plugin-html": "^8.1.4",
     "eslint-plugin-prettier": "^5.5.5",
     "fuck-you": "^1.3.0",
