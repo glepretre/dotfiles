@@ -141,6 +141,9 @@ alias npm-path='PATH=$(npm bin):$PATH'
 alias nvchad="NVIM_APPNAME=nvchad nvim"
 alias lazyvim="NVIM_APPNAME=lazyvim nvim"
 
+# https://opencode.ai/
+alias oc=opencode
+
 # Echo paths nicely
 alias paths="echo $PATH | tr -s ':' '\n'"
 
