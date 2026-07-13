@@ -33,6 +33,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "chat.disableAIFeatures": false,
+  "custom-contextmenu.selectors": [
+    "^Format Document With"
+  ],
   "editor.detectIndentation": false,
   "editor.formatOnPaste": true,
   "editor.insertSpaces": true,
