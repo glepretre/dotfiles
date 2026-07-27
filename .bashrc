@@ -257,6 +257,11 @@ function color() {
   sed -u s"/$1/$fg_c\\0$c_rs/g" <<< "$INPUT"
 }
 
+opencode-perso() {
+  OPENCODE_CONFIG="$HOME/.config/opencode/opencode-personal.jsonc" \
+    command opencode "$@"
+}
+
 # nix - https://nixos.org/
 source_if_exists ${HOME}/.nix-profile/etc/profile.d/nix.sh
 

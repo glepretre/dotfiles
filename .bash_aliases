@@ -142,7 +142,10 @@ alias nvchad="NVIM_APPNAME=nvchad nvim"
 alias lazyvim="NVIM_APPNAME=lazyvim nvim"
 
 # https://opencode.ai/
+alias o=opencode
 alias oc=opencode
+# see .bashrc
+alias op=opencode-perso
 
 # Echo paths nicely
 alias paths="echo $PATH | tr -s ':' '\n'"
