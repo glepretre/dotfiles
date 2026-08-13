@@ -7,5 +7,17 @@
         "apiKey": "{file:~/.config/opencode/openrouter-personal.key}"
       }
     }
+  },
+
+  "permission": {
+    "read": {
+      ".envrc": "ask"
+    },
+    "bash": {
+      "gh *": "ask",
+      "git push": "deny",
+      "git push *": "deny",
+      "rm *": "ask"
+    }
   }
 }
