@@ -145,7 +145,10 @@ alias lazyvim="NVIM_APPNAME=lazyvim nvim"
 alias o=opencode
 alias oc=opencode
 # see .bashrc
+alias oc_usage=openrouter_usage
 alias op=opencode-perso
+alias op_usage=openrouter_perso_usage
+
 
 # Echo paths nicely
 alias paths="echo $PATH | tr -s ':' '\n'"

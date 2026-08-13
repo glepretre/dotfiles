@@ -262,6 +262,20 @@ opencode-perso() {
     command opencode "$@"
 }
 
+# OpenRouter Pro
+openrouter_usage() {
+    curl -s https://openrouter.ai/api/v1/key \
+        -H "Authorization: Bearer $(<"$HOME/.config/opencode/openrouter-pro.key")" \
+        | jq .
+}
+
+# Personal OpenRouter
+openrouter_perso_usage() {
+    curl -s https://openrouter.ai/api/v1/key \
+        -H "Authorization: Bearer $(<"$HOME/.config/opencode/openrouter-personal.key")" \
+        | jq .
+}
+
 # nix - https://nixos.org/
 source_if_exists ${HOME}/.nix-profile/etc/profile.d/nix.sh
 
