@@ -181,3 +181,6 @@ alias tree="tree -C"
 
 # Update & upgrade packages
 alias up="sudo apt-get update && sudo apt-get upgrade"
+
+# https://myip.wtf/
+alias wtfismyip="curl ipv4.myip.wtf && curl myip.wtf"
