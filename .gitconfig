@@ -25,6 +25,7 @@
   cp = cherry-pick
   cv = commit -v
   cvn = commit -v --no-verify
+  da = "!f() { tmp=$(mktemp); cp \"$(git rev-parse --git-path index)\" \"$tmp\" 2>/dev/null || true; GIT_INDEX_FILE=\"$tmp\" git add -A; GIT_INDEX_FILE=\"$tmp\" git difftool --cached \"$@\"; }; f"
   dc = difftool --cached
   df = difftool -p
   dm = !git difftool $(git main-branch)
