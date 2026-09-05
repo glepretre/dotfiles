@@ -26,7 +26,6 @@
     "package-json-validator-cli": "^0.1.11",
     "pomo": "^1.1.1",
     "prettier": "^3.9.6",
-    "sloc": "^0.3.2",
     "stopwatch-cli": "^1.0.0",
     "svgexport": "^0.4.2",
     "tldr": "^3.5.0",
