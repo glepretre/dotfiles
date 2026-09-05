@@ -33,6 +33,7 @@
   dr = "!f(){ MB=$(git main-branch); ANCESTOR=$(git merge-base HEAD origin/$MB); git icdiff $ANCESTOR..HEAD; }; f"
   drs = "!f(){ MB=$(git main-branch); ANCESTOR=$(git merge-base HEAD origin/$MB); git diff --stat $ANCESTOR..HEAD; }; f"
   ds = diff --stat
+  dsa = da --stat
   dsc = diff --stat --cached
   fa = !git fetch && git fetch --tags
   fap = !git fetch --prune && git fetch --tags
