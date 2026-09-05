@@ -258,7 +258,10 @@ function color() {
 }
 
 opencode-perso() {
-  OPENCODE_CONFIG="$HOME/.config/opencode/opencode-personal.jsonc" \
+  XDG_DATA_HOME="$HOME/.local/share/opencode-personal" \
+    XDG_STATE_HOME="$HOME/.local/state/opencode-personal" \
+    XDG_CACHE_HOME="$HOME/.cache/opencode-personal" \
+    OPENCODE_CONFIG="$HOME/.config/opencode/opencode-personal.jsonc" \
     command opencode "$@"
 }
 
