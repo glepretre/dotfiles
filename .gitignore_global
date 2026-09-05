@@ -2,6 +2,7 @@
 *.csslintrc
 *.htmlhintrc
 *.jsbeautifyrc
+*.key
 *.latest-stash
 *.log
 *.pem
