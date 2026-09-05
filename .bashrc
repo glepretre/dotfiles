@@ -195,6 +195,33 @@ groot() {
   cd "$(git rev-parse --show-toplevel)" || exit
 }
 
+# Git typo wrapper (gi taa -> git aa, gi df -> git df)
+gi() {
+  if [[ "$1" == t?* && "$1" != "tag" ]]; then
+    local sub="${1#t}"
+    echo "⌨️  Too fast: 'gi $1' -> 'git $sub'" >&2
+    shift
+    git "$sub" "$@"
+  else
+    echo "🫖  Tea time? 'gi $1' -> 'git $1'" >&2
+    git "$@"
+  fi
+}
+
+gti() {
+  if [ $# -gt 0 ]; then
+    echo "🏎️  Vroom vroom! 'gti $1' -> 'git $1'" >&2
+  else
+    echo "🏎️  Vroom vroom! 'gti' -> 'git'" >&2
+  fi
+  git "$@"
+}
+
+gtig() {
+  echo "🏎️  Vroom vroom! 'gtig' -> 'gitg'" >&2
+  gitg "$@"
+}
+
 # Original idea:
 # https://github.com/kepkin/dev-shell-essentials/blob/45da0e2a8da961a146e72cba7fc63da589d89a05/highlight.sh
 # Enhanced
