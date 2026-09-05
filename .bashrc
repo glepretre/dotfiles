@@ -3,8 +3,7 @@
 # for examples
 
 # https://stackoverflow.com/a/34143401
-exists()
-{
+exists() {
   command -v "$1" >/dev/null 2>&1
 }
 
@@ -21,8 +20,8 @@ source_if_exists /etc/bash.bashrc
 
 # If not running interactively, don't do anything
 case $- in
-    *i*) ;;
-      *) return;;
+*i*) ;;
+*) return ;;
 esac
 
 # Source Debian default bash_completion init script
@@ -72,7 +71,7 @@ export LESS="-RMc --shift 5"
 # If this is an xterm set the title to current directory
 # And a nice customized prompt string
 case "$TERM" in
-xterm*|rxvt*)
+xterm* | rxvt*)
   if [ $(id -u) -eq 0 ]; then
     # Root
     export PROMPT_COMMAND=""
@@ -83,8 +82,7 @@ xterm*|rxvt*)
     PS1="\[$(tput bold)\]\[$(tput setaf 4)\]\t \[$(tput setaf 4)\][\[$(tput setaf 2)\]\u\[$(tput setaf 2)\]@\[$(tput setaf 2)\]\h\[$(tput setaf 2)\]\[$(tput setaf 4)\]] \w\[$(tput setaf 4)\] \\$ \[$(tput sgr0)\]"
   fi
   ;;
-*)
-  ;;
+*) ;;
 esac
 
 # bash-git-prompt
@@ -128,8 +126,10 @@ source_if_exists ~/.bash_aliases
 # MEMO: rename h function to hl to avoid conflict with h aliased to 'history'
 source_if_exists ~/tools/hhighlighter/h.sh
 
-PERL_MB_OPT="--install_base \"/home/gilles/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/gilles/perl5"; export PERL_MM_OPT;
+PERL_MB_OPT="--install_base \"/home/gilles/perl5\""
+export PERL_MB_OPT
+PERL_MM_OPT="INSTALL_BASE=/home/gilles/perl5"
+export PERL_MM_OPT
 
 LS_COLORS="rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:"
 
@@ -167,7 +167,7 @@ source_if_exists /etc/bash_completion.d/password-store
 
 # nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 source_if_exists "$NVM_DIR/bash_completion"
 
 #pyenv
@@ -184,14 +184,14 @@ recently_modified_files() {
   find $1 -mtime -1 -print
 }
 
-mkcd () {
+mkcd() {
   mkdir -p "$1"
   cd "$1"
 }
 
 # I am groot:
 # Go to git toplevel directory
-groot () {
+groot() {
   cd "$(git rev-parse --show-toplevel)" || exit
 }
 
@@ -199,28 +199,25 @@ groot () {
 # https://github.com/kepkin/dev-shell-essentials/blob/45da0e2a8da961a146e72cba7fc63da589d89a05/highlight.sh
 # Enhanced
 function color() {
-  function usage () {
+  function usage() {
     echo "usage: input | color PATTERN [COLOR]"
     echo "COLOR: black, red (default), green, yellow, blue, magenta, cyan"
   }
 
   # https://stackoverflow.com/a/20913871/3049002
   IFS= read -rd '' -n 1 -t 1 INPUT
-  while IFS= read -rd '' -n 1 -t 1 c
-  do
+  while IFS= read -rd '' -n 1 -t 1 c; do
     INPUT+=$c
   done
 
-  if [ -z "$INPUT" ]
-  then
+  if [ -z "$INPUT" ]; then
     echo "No input"
     echo ""
     usage
     return 1
   fi
 
-  if [ $# -lt 1 ] || [ $# -gt 2 ]
-  then
+  if [ $# -lt 1 ] || [ $# -gt 2 ]; then
     echo "Wrong number of arguments"
     echo ""
     usage
@@ -228,18 +225,18 @@ function color() {
   fi
 
   case "$2" in
-    "")
-      COLOR="red"
-      ;;
-    black|red|green|yellow|blue|magenta|cyan)
-      COLOR="$2"
-      ;;
-    *)
-      echo "Unrecognized color"
-      echo ""
-      usage
-      return 1
-      ;;
+  "")
+    COLOR="red"
+    ;;
+  black | red | green | yellow | blue | magenta | cyan)
+    COLOR="$2"
+    ;;
+  *)
+    echo "Unrecognized color"
+    echo ""
+    usage
+    return 1
+    ;;
   esac
 
   declare -A fg_color_map
@@ -251,10 +248,9 @@ function color() {
   fg_color_map[magenta]=35
   fg_color_map[cyan]=36
 
-
   fg_c=$(echo -e "\\e[1;${fg_color_map[$COLOR]}m")
   c_rs=$'\e[0m'
-  sed -u s"/$1/$fg_c\\0$c_rs/g" <<< "$INPUT"
+  sed -u s"/$1/$fg_c\\0$c_rs/g" <<<"$INPUT"
 }
 
 opencode-perso() {
@@ -267,16 +263,16 @@ opencode-perso() {
 
 # OpenRouter Pro
 openrouter_usage() {
-    curl -s https://openrouter.ai/api/v1/key \
-        -H "Authorization: Bearer $(<"$HOME/.config/opencode/openrouter-pro.key")" \
-        | jq .
+  curl -s https://openrouter.ai/api/v1/key \
+    -H "Authorization: Bearer $(<"$HOME/.config/opencode/openrouter-pro.key")" |
+    jq .
 }
 
 # Personal OpenRouter
 openrouter_perso_usage() {
-    curl -s https://openrouter.ai/api/v1/key \
-        -H "Authorization: Bearer $(<"$HOME/.config/opencode/openrouter-personal.key")" \
-        | jq .
+  curl -s https://openrouter.ai/api/v1/key \
+    -H "Authorization: Bearer $(<"$HOME/.config/opencode/openrouter-personal.key")" |
+    jq .
 }
 
 # nix - https://nixos.org/
@@ -293,12 +289,10 @@ source_if_exists ${HOME}/.bashrc_private
 
 # NOTE: Leave this at the end as it may stop to prompt passphrase
 # Launch SSH agent and ask for passphrase once at first terminal opening
-if [ -f ${HOME}/bin/ssh-agent-launcher.sh ] && [ -f ${HOME}/.ssh/id_rsa ]
-then
+if [ -f ${HOME}/bin/ssh-agent-launcher.sh ] && [ -f ${HOME}/.ssh/id_rsa ]; then
   eval $(${HOME}/bin/ssh-agent-launcher.sh)
 fi
 
-if [ -f ${HOME}/bin/gpg-agent-launcher.sh ] && [ -f ${HOME}/.gnupg/secring.gpg ]
-then
+if [ -f ${HOME}/bin/gpg-agent-launcher.sh ] && [ -f ${HOME}/.gnupg/secring.gpg ]; then
   eval $(${HOME}/bin/gpg-agent-launcher.sh)
 fi
