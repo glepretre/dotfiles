@@ -3,13 +3,76 @@
 
   "permission": {
     "read": {
-      ".envrc": "ask"
+      // Environment / secrets in projects
+      "*.env": "deny",
+      "*.env.*": "ask",
+      "*.env.prod": "deny",
+      "*.env.production": "deny",
+      "*.envrc": "ask",
+      "*.env.example": "allow",
+
+      // Personal credentials
+      "~/.ssh/**": "deny",
+      "~/.gnupg/**": "deny",
+      "~/.config/gh/hosts.yml": "deny",
+      "~/.npmrc": "deny",
+
+      // OpenCode credentials
+      "~/.config/opencode/*.key": "deny",
+      "~/.local/share/opencode/auth.json": "deny"
     },
+
+    "edit": {
+      // Ask before editing git internals
+      "*.git/**": "ask"
+    },
+
+    // Default but explicit
+    "external_directory": "ask",
+
     "bash": {
+      // GitHub CLI
+      "gh": "ask",
       "gh *": "ask",
+
+      // Never push
       "git push": "deny",
       "git push *": "deny",
-      "rm *": "ask"
+
+      // Git commands capable of losing / rewriting work
+      "git branch -d *": "ask",
+      "git branch -D *": "ask",
+      "git cherry-pick*": "ask",
+      "git checkout *": "ask",
+      "git clean *": "ask",
+      "git commit --amend*": "ask",
+
+      // History-changing operations
+      "git merge*": "ask",
+      "git pull*": "ask",
+      "git rebase*": "ask",
+      "git reset *": "ask",
+      "git restore *": "ask",
+      "git revert*": "ask",
+      "git stash clear": "ask",
+      "git stash drop*": "ask",
+      "git switch*": "ask",
+
+      // Filesystem destruction
+      "rm *": "ask",
+      "rmdir *": "ask",
+      "truncate *": "ask",
+      "dd *": "ask",
+      "shred *": "deny",
+
+      // Privilege escalation
+      "sudo *": "ask",
+
+      // Publishing packages
+      "npm publish": "ask",
+      "npm publish *": "ask",
+      "npm unpublish *": "ask",
+      "npm deprecate *": "ask"
     }
   }
 }
