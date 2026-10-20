@@ -217,6 +217,24 @@ gti() {
   git "$@"
 }
 
+gto() {
+  if [ $# -gt 0 ]; then
+    echo "🐎 250, 288 or 599? 'gto $1' -> 'git $1'" >&2
+  else
+    echo "🐎 250, 288 or 599? 'gto' -> 'git'" >&2
+  fi
+  git "$@"
+}
+
+got() {
+  if [ $# -gt 0 ]; then
+    echo "👑 Bend the knee. 'got $1' -> 'git $1'" >&2
+  else
+    echo "👑 Bend the knee. 'got' -> 'git'" >&2
+  fi
+  git "$@"
+}
+
 gtig() {
   echo "🏎️  Vroom vroom! 'gtig' -> 'gitg'" >&2
   gitg "$@"
