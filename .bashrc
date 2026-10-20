@@ -303,7 +303,7 @@ opencode-perso() {
     XDG_CONFIG_HOME="$HOME/.config/opencode-personal" \
     XDG_STATE_HOME="$HOME/.local/state/opencode-personal" \
     XDG_CACHE_HOME="$HOME/.cache/opencode-personal" \
-    OPENCODE_CONFIG="$HOME/.config/opencode/opencode-personal.jsonc" \
+    OPENCODE_CONFIG="$HOME/.config/opencode-personal/opencode-personal.jsonc" \
     command opencode "$@"
 }
 
@@ -317,7 +317,7 @@ openrouter_usage() {
 # Personal OpenRouter
 openrouter_perso_usage() {
   curl -s https://openrouter.ai/api/v1/key \
-    -H "Authorization: Bearer $(<"$HOME/.config/opencode/openrouter-personal.key")" |
+    -H "Authorization: Bearer $(<"$HOME/.config/opencode-personal/openrouter-personal.key")" |
     jq .
 }
 

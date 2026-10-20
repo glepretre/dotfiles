@@ -1,0 +1,73 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+
+  "permissions": [
+    // Environment / secrets in projects
+    { "action": "read", "resource": "*.env", "effect": "deny" },
+    { "action": "read", "resource": "*.env.*", "effect": "ask" },
+    { "action": "read", "resource": "*.env.prod", "effect": "deny" },
+    { "action": "read", "resource": "*.env.production", "effect": "deny" },
+    { "action": "read", "resource": "*.envrc", "effect": "ask" },
+    { "action": "read", "resource": "*.env.example", "effect": "allow" },
+
+    // Personal credentials
+    { "action": "read", "resource": "~/.ssh/**", "effect": "deny" },
+    { "action": "read", "resource": "~/.gnupg/**", "effect": "deny" },
+    { "action": "read", "resource": "~/.config/gh/hosts.yml", "effect": "deny" },
+    { "action": "read", "resource": "~/.npmrc", "effect": "deny" },
+
+    // OpenCode credentials
+    { "action": "read", "resource": "~/.config/opencode/*.key", "effect": "deny" },
+    { "action": "read", "resource": "~/.config/opencode-personal/*.key", "effect": "deny" },
+    { "action": "read", "resource": "~/.local/share/opencode/auth.json", "effect": "deny" },
+
+    // Ask before editing git internals
+    { "action": "edit", "resource": "*.git/**", "effect": "ask" },
+
+    // Preserve V1 behavior: ask before accessing paths outside the project (V2 allows by default)
+    { "action": "external_directory", "resource": "*", "effect": "ask" },
+
+    // GitHub CLI
+    { "action": "shell", "resource": "gh", "effect": "ask" },
+    { "action": "shell", "resource": "gh *", "effect": "ask" },
+
+    // Never push
+    { "action": "shell", "resource": "git push", "effect": "deny" },
+    { "action": "shell", "resource": "git push *", "effect": "deny" },
+
+    // Git commands capable of losing / rewriting work
+    { "action": "shell", "resource": "git branch -d *", "effect": "ask" },
+    { "action": "shell", "resource": "git branch -D *", "effect": "ask" },
+    { "action": "shell", "resource": "git cherry-pick*", "effect": "ask" },
+    { "action": "shell", "resource": "git checkout *", "effect": "ask" },
+    { "action": "shell", "resource": "git clean *", "effect": "ask" },
+    { "action": "shell", "resource": "git commit --amend*", "effect": "ask" },
+
+    // History-changing operations
+    { "action": "shell", "resource": "git merge*", "effect": "ask" },
+    { "action": "shell", "resource": "git pull*", "effect": "ask" },
+    { "action": "shell", "resource": "git rebase*", "effect": "ask" },
+    { "action": "shell", "resource": "git reset *", "effect": "ask" },
+    { "action": "shell", "resource": "git restore *", "effect": "ask" },
+    { "action": "shell", "resource": "git revert*", "effect": "ask" },
+    { "action": "shell", "resource": "git stash clear", "effect": "ask" },
+    { "action": "shell", "resource": "git stash drop*", "effect": "ask" },
+    { "action": "shell", "resource": "git switch*", "effect": "ask" },
+
+    // Filesystem destruction
+    { "action": "shell", "resource": "rm *", "effect": "ask" },
+    { "action": "shell", "resource": "rmdir *", "effect": "ask" },
+    { "action": "shell", "resource": "truncate *", "effect": "ask" },
+    { "action": "shell", "resource": "dd *", "effect": "ask" },
+    { "action": "shell", "resource": "shred *", "effect": "deny" },
+
+    // Privilege escalation
+    { "action": "shell", "resource": "sudo *", "effect": "ask" },
+
+    // Publishing packages
+    { "action": "shell", "resource": "npm publish", "effect": "ask" },
+    { "action": "shell", "resource": "npm publish *", "effect": "ask" },
+    { "action": "shell", "resource": "npm unpublish *", "effect": "ask" },
+    { "action": "shell", "resource": "npm deprecate *", "effect": "ask" }
+  ]
+}
