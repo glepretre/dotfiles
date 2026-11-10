@@ -8,7 +8,7 @@
   "license": "Proprietary",
   "private": true,
   "devDependencies": {
-    "@opencode/cli": "^2.2.5",
+    "@opencode/cli": "^2.2.7",
     "@sentry/cli": "^3.8.2",
     "emoj": "^4.2.0",
     "eslint": "^10.14.0",
