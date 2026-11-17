@@ -125,6 +125,7 @@
   "workbench.colorCustomizations": {
     "git.blame.editorDecorationForeground": "#6b6b6b"
   },
+  "workbench.colorTheme": "Dark Modern",
   "workbench.editorAssociations": {
     "*.svg": "default"
   },
